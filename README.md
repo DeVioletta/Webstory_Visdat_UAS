@@ -28,6 +28,8 @@ npm run data                     # menjalankan kedua skrip di bawah
 - `scripts/prepare_negara.py` membaca ekspor-impor per negara, mencocokkan nama
   negara dengan `data/reference/negara_referensi.csv`, mengecek total terhadap data
   SITC, lalu menulis `data/processed/chapter2.json`.
+- `scripts/prepare_treemap.py` menyusun hirarki SITC (Section, Division, Group)
+  dengan label Indonesia untuk Bab 3 dan Bab 4, menulis `data/processed/chapter3.json`.
 - `scripts/build_referensi_negara.py` (jarang perlu) membuat ulang tabel referensi
   negara. Jalankan hanya jika BPS memakai nama negara baru; tambahkan dulu namanya
   ke kamus `ISO` di dalam skrip.
@@ -40,12 +42,13 @@ components/ui/       komponen bersama (header, caption, hook scroll, kerangka ba
 components/chapter0/ komponen Bab 0
 components/chapter1/ komponen Bab 1 (Sankey dan grafik garis batu bara)
 components/chapter2/ komponen Bab 2 (flow map dan grafik neraca per mitra)
+components/chapter3/ komponen Bab 3 (treemap dan daftar surplus/defisit)
 content/             semua teks webstory, dipisah dari kode
 data/raw/            file Excel asli dari BPS
 data/processed/      JSON hasil olahan yang di-import kode
 data/reference/      tabel referensi negara (kode ISO, kawasan, koordinat)
 public/data/         JSON yang diambil lewat fetch di browser
-lib/                 fungsi format angka
+lib/                 fungsi format angka dan skala warna
 scripts/             skrip Python pengolah data
 ```
 

@@ -54,3 +54,15 @@ export function persen(bagian: number, total: number): string {
 export function persenBulat(bagian: number, total: number): string {
   return fmt0.format((bagian / total) * 100);
 }
+
+/** Indeks Spesialisasi Perdagangan: (ekspor - impor) / (ekspor + impor), -1 sampai 1 */
+export function isp(ekspor: number, impor: number): number {
+  const t = ekspor + impor;
+  return t > 0 ? (ekspor - impor) / t : 0;
+}
+
+/** ISP dengan dua desimal dan tanda minus yang benar */
+export function formatIsp(v: number): string {
+  const s = new Intl.NumberFormat("id-ID", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(Math.abs(v));
+  return v < 0 ? `\u2212${s}` : v > 0 ? `+${s}` : s;
+}
