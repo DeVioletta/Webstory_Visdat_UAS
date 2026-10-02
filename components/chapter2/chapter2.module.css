@@ -289,3 +289,58 @@
     width: 200px;
   }
 }
+
+/* ---------- Kontrol zoom peta ---------- */
+.zoomControls {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  display: flex;
+  gap: 4px;
+}
+
+.zoomControls button {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  font-size: 13px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.zoomControls button:first-child,
+.zoomControls button:nth-child(2) {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.zoomControls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* Saat diperbesar, seret untuk menggeser peta. Saat tidak, sentuhan tetap menggulir halaman. */
+.mapWrap[data-zoom="true"] {
+  cursor: grab;
+  touch-action: none;
+}
+
+.mapWrap[data-zoom="true"]:active {
+  cursor: grabbing;
+}
+
+.zoomHint {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .zoomControls button {
+    min-width: 34px;
+    height: 34px;
+  }
+}
