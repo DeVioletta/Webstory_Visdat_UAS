@@ -82,3 +82,15 @@ export function teksDiAtasTumbuh(persen: number): string {
 export const GRADIEN_TUMBUH = `linear-gradient(to right, ${STOP_TUMBUH.map(
   ([v, c]) => `rgb(${c.join(",")}) ${((v + BATAS_TUMBUH) / (2 * BATAS_TUMBUH)) * 100}%`
 ).join(", ")})`;
+
+/** Bab 5: palet sequential 5 kelas untuk PDRB per kapita (ColorBrewer YlGnBu, aman buta warna) */
+export const PALET_PDRB = ["#ffffcc", "#a1dab4", "#41b6c4", "#2c7fb8", "#253494"];
+
+/** Bab 5: warna klaster LISA. Merah-biru dapat dibedakan pembaca buta warna merah-hijau. */
+export const WARNA_LISA: Record<string, string> = {
+  HH: "#b2182b",
+  HL: "#ef8a62",
+  LH: "#67a9cf",
+  LL: "#2166ac",
+  NS: "#e3e6ea",
+};

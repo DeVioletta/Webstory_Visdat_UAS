@@ -1,2 +1,6 @@
 pandas>=2.0
 openpyxl>=3.1
+geopandas>=1.0
+libpysal>=4.10
+esda>=2.5
+mapclassify>=2.6

@@ -31,6 +31,11 @@ npm run data                     # menjalankan kedua skrip di bawah
 - `scripts/prepare_treemap.py` menyusun hirarki SITC (Section, Division, Group)
   dengan label Indonesia, menulis `data/processed/chapter3.json`. File ini dipakai
   bersama oleh Bab 3 (treemap) dan Bab 4 (sunburst).
+- `scripts/prepare_pdrb.py` mencocokkan GeoJSON kab/kota (kode Kemendagri) dengan
+  tabel PDRB (kode BPS) lewat nama daerah, menghitung kelas kuantil dan natural breaks,
+  Moran's I dan LISA (dari batas resolusi asli), lalu menyederhanakan batas untuk web
+  dengan mapshaper. Menulis `data/processed/chapter5.json`,
+  `public/data/kabkota.topo.json`, dan `data/reference/crosswalk_kab_kota.csv`.
 - `scripts/build_referensi_negara.py` (jarang perlu) membuat ulang tabel referensi
   negara. Jalankan hanya jika BPS memakai nama negara baru; tambahkan dulu namanya
   ke kamus `ISO` di dalam skrip.
@@ -45,6 +50,7 @@ components/chapter1/ komponen Bab 1 (Sankey dan grafik garis batu bara)
 components/chapter2/ komponen Bab 2 (flow map dan grafik neraca per mitra)
 components/chapter3/ komponen Bab 3 (treemap dan daftar surplus/defisit)
 components/chapter4/ komponen Bab 4 (sunburst perubahan 2024 ke 2025)
+components/chapter5/ komponen Bab 5 (peta PDRB per kapita, histogram, diagram Moran)
 content/             semua teks webstory, dipisah dari kode
 data/raw/            file Excel asli dari BPS
 data/processed/      JSON hasil olahan yang di-import kode

@@ -1,0 +1,391 @@
+/* Bab 5: gaya khusus peta dan grafik. Kerangka bab ada di components/ui/story.module.css */
+
+.figure {
+  margin: 0;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px 20px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  max-width: 36rem;
+}
+
+.miniTitle {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.select {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.select select,
+.search input {
+  font: inherit;
+  font-size: 13px;
+  padding: 4px 8px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.search input {
+  width: 11rem;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0 0 8px;
+  padding: 0;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend small {
+  color: var(--muted);
+}
+
+.legendUnit {
+  color: var(--muted);
+}
+
+.swatch {
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid rgba(20, 33, 61, 0.25);
+}
+
+/* ---------- Peta ---------- */
+.mapWrap {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  touch-action: pan-y;
+  overflow: hidden;
+}
+
+.mapWrap[data-zoom="true"] {
+  cursor: grab;
+  touch-action: none;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.region {
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 0.4px;
+  cursor: pointer;
+  transition: fill 400ms ease, opacity 300ms ease;
+}
+
+.region[data-redup="true"] {
+  opacity: 0.3;
+}
+
+.provLine {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 0.9px;
+  stroke-opacity: 0.55;
+  pointer-events: none;
+}
+
+.highlight {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2px;
+  pointer-events: none;
+}
+
+.mapLabel {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.zoomControls {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  display: flex;
+  gap: 4px;
+}
+
+.zoomControls button {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  font-size: 13px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.zoomControls button:nth-child(-n + 2) {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.zoomControls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.mapWrap[data-ringkas="true"] .zoomControls button:last-child {
+  display: none;
+}
+
+.loading,
+.error {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.error {
+  color: var(--impor);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 3;
+  width: 230px;
+  padding: 8px 10px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--ink);
+  font-size: 13px;
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+.tipTitle {
+  font-weight: 700;
+}
+
+.tipTitle span {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.tipGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 10px;
+  margin: 4px 0 0;
+}
+
+.tipGrid dt {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.tipGrid dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.tipNote {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.zoomHint {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.inspector {
+  position: relative;
+  margin-top: 8px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border-left: 3px solid var(--ink);
+  font-size: 14px;
+  min-height: 48px;
+}
+
+.inspector .tipGrid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.clear {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: 0;
+  background: none;
+  color: var(--ekspor);
+  text-decoration: underline;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* ---------- Histogram ---------- */
+.histWrap svg {
+  display: block;
+}
+
+.axis {
+  font-size: 11.5px;
+  fill: var(--muted);
+}
+
+.axisStrong {
+  font-size: 11.5px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+
+.breakLine {
+  stroke: var(--ink);
+  stroke-dasharray: 3 3;
+  stroke-width: 1;
+}
+
+/* ---------- Diagram Moran ---------- */
+.moranStat {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.clusterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.clusterButtons button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-size: 13px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.clusterButtons button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.moranGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 460px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.scatterWrap svg {
+  display: block;
+}
+
+.quadrant {
+  fill: transparent;
+  cursor: pointer;
+}
+
+.quadrant:hover {
+  fill: rgba(20, 33, 61, 0.04);
+}
+
+.quadrant[data-aktif="true"] {
+  fill: rgba(20, 33, 61, 0.08);
+}
+
+.quadLabel {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--ink-soft);
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 19px;
+  }
+
+  .search input {
+    width: 9rem;
+  }
+
+  .inspector .tipGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .moranGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

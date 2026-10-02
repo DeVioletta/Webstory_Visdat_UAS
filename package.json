@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "data": "python3 scripts/prepare_sitc.py && python3 scripts/prepare_energi.py && python3 scripts/prepare_negara.py && python3 scripts/prepare_treemap.py"
+    "data": "python3 scripts/prepare_sitc.py && python3 scripts/prepare_energi.py && python3 scripts/prepare_negara.py && python3 scripts/prepare_treemap.py && python3 scripts/prepare_pdrb.py"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
@@ -29,6 +29,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/topojson-client": "^3.1.5",
+    "mapshaper": "^0.7.72",
     "typescript": "^5",
     "world-countries": "^5.1.0"
   }
