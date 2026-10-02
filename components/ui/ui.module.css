@@ -120,3 +120,32 @@
   font-weight: 600;
   color: var(--ink-soft);
 }
+
+/* ---------- Tombol pilihan (segmented control), dipakai di semua bab ---------- */
+.segment {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.segment button {
+  border: 0;
+  background: transparent;
+  padding: 5px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.segment button + button {
+  border-left: 1px solid var(--ink);
+}
+
+.segment button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}

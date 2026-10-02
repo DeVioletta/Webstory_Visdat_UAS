@@ -1,0 +1,868 @@
+{
+  "satuan": "terajoule (TJ)",
+  "tahunSankey": 2024,
+  "sankey": {
+    "nodes": [
+      {
+        "id": "produksi",
+        "label": "Produksi dalam negeri",
+        "peran": "asal",
+        "keluarga": null
+      },
+      {
+        "id": "impor",
+        "label": "Impor",
+        "peran": "asal",
+        "keluarga": null
+      },
+      {
+        "id": "stok_ambil",
+        "label": "Pengambilan stok",
+        "peran": "asal",
+        "keluarga": null
+      },
+      {
+        "id": "batubara",
+        "label": "Batu bara",
+        "peran": "jenis",
+        "keluarga": "batubara"
+      },
+      {
+        "id": "stok_tambah",
+        "label": "Penambahan stok",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "ekspor",
+        "label": "Ekspor",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "marine_aviation_bunkers",
+        "label": "Bunker kapal & pesawat",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "konsumsi_bukan_untuk_energi",
+        "label": "Bahan baku (bukan energi)",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "konsumsi_sektor_energi",
+        "label": "Dipakai sektor energi",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "tercecer_penyaluran_pengangkutan",
+        "label": "Susut penyaluran",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "industri_konstruksi_pertambangan_non_migas",
+        "label": "Industri",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "transportasi",
+        "label": "Transportasi",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "rumah_tangga",
+        "label": "Rumah tangga",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "pertanian",
+        "label": "Pertanian",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "konsumen_lainnya",
+        "label": "Komersial & lainnya",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "briket_kokas",
+        "label": "Briket & kokas",
+        "peran": "jenis",
+        "keluarga": "batubara"
+      },
+      {
+        "id": "minyak_mentah_kondensat",
+        "label": "Minyak mentah",
+        "peran": "jenis",
+        "keluarga": "minyak"
+      },
+      {
+        "id": "bbm_berkadar_ringan",
+        "label": "BBM ringan",
+        "peran": "jenis",
+        "keluarga": "minyak"
+      },
+      {
+        "id": "bbm_berkadar_berat",
+        "label": "BBM berat",
+        "peran": "jenis",
+        "keluarga": "minyak"
+      },
+      {
+        "id": "hasil_olahan_minyak_lainnya",
+        "label": "Olahan minyak lain",
+        "peran": "jenis",
+        "keluarga": "minyak"
+      },
+      {
+        "id": "lpg_gas_kilang",
+        "label": "LPG & gas kilang",
+        "peran": "jenis",
+        "keluarga": "minyak"
+      },
+      {
+        "id": "gas_alam",
+        "label": "Gas alam",
+        "peran": "jenis",
+        "keluarga": "gas"
+      },
+      {
+        "id": "listrik",
+        "label": "Listrik",
+        "peran": "jenis",
+        "keluarga": "listrik"
+      },
+      {
+        "id": "energi_biomassa",
+        "label": "Biomassa",
+        "peran": "jenis",
+        "keluarga": "biomassa"
+      },
+      {
+        "id": "energi_biomassa_olahan_lainnya",
+        "label": "Biomassa olahan",
+        "peran": "jenis",
+        "keluarga": "biomassa"
+      },
+      {
+        "id": "sumber_energi_lainnya",
+        "label": "Sumber lainnya",
+        "peran": "jenis",
+        "keluarga": "lainnya"
+      },
+      {
+        "id": "pabrik_briket",
+        "label": "Pabrik briket",
+        "peran": "proses",
+        "keluarga": null
+      },
+      {
+        "id": "kehilangan",
+        "label": "Kehilangan konversi",
+        "peran": "tujuan",
+        "keluarga": null
+      },
+      {
+        "id": "pabrik_kokas",
+        "label": "Pabrik kokas",
+        "peran": "proses",
+        "keluarga": null
+      },
+      {
+        "id": "kilang_gas",
+        "label": "Kilang gas",
+        "peran": "proses",
+        "keluarga": null
+      },
+      {
+        "id": "selisih",
+        "label": "Selisih neraca",
+        "peran": "asal",
+        "keluarga": null
+      },
+      {
+        "id": "kilang_minyak",
+        "label": "Kilang minyak",
+        "peran": "proses",
+        "keluarga": null
+      },
+      {
+        "id": "pembangkit_tenaga_listrik",
+        "label": "Pembangkit listrik",
+        "peran": "proses",
+        "keluarga": null
+      },
+      {
+        "id": "pencampuran",
+        "label": "Pencampuran biodiesel",
+        "peran": "proses",
+        "keluarga": null
+      }
+    ],
+    "links": [
+      {
+        "source": "produksi",
+        "target": "batubara",
+        "value": 21018820,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "impor",
+        "target": "batubara",
+        "value": 531762,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "batubara",
+        "target": "stok_tambah",
+        "value": 1443567,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "batubara",
+        "target": "ekspor",
+        "value": 13283923,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "batubara",
+        "target": "industri_konstruksi_pertambangan_non_migas",
+        "value": 2866423,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "impor",
+        "target": "briket_kokas",
+        "value": 52252,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "briket_kokas",
+        "target": "ekspor",
+        "value": 112191,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "briket_kokas",
+        "target": "konsumsi_bukan_untuk_energi",
+        "value": 52252,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "briket_kokas",
+        "target": "industri_konstruksi_pertambangan_non_migas",
+        "value": 5634,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "produksi",
+        "target": "minyak_mentah_kondensat",
+        "value": 1292308,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "impor",
+        "target": "minyak_mentah_kondensat",
+        "value": 649022,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "stok_ambil",
+        "target": "minyak_mentah_kondensat",
+        "value": 130612,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "minyak_mentah_kondensat",
+        "target": "ekspor",
+        "value": 153619,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "impor",
+        "target": "bbm_berkadar_ringan",
+        "value": 920542,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "stok_ambil",
+        "target": "bbm_berkadar_ringan",
+        "value": 2707,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "ekspor",
+        "value": 23015,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "marine_aviation_bunkers",
+        "value": 29090,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "konsumsi_bukan_untuk_energi",
+        "value": 80184,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "konsumsi_sektor_energi",
+        "value": 1239,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "industri_konstruksi_pertambangan_non_migas",
+        "value": 46544,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "transportasi",
+        "value": 591678,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "rumah_tangga",
+        "value": 743956,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "pertanian",
+        "value": 1193,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "konsumen_lainnya",
+        "value": 27563,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "impor",
+        "target": "bbm_berkadar_berat",
+        "value": 329446,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "stok_ambil",
+        "target": "bbm_berkadar_berat",
+        "value": 9608,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "ekspor",
+        "value": 60810,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "marine_aviation_bunkers",
+        "value": 16556,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "konsumsi_bukan_untuk_energi",
+        "value": 75088,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "konsumsi_sektor_energi",
+        "value": 86668,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "industri_konstruksi_pertambangan_non_migas",
+        "value": 392711,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "transportasi",
+        "value": 654814,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "rumah_tangga",
+        "value": 32386,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "pertanian",
+        "value": 46344,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "konsumen_lainnya",
+        "value": 17281,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "impor",
+        "target": "hasil_olahan_minyak_lainnya",
+        "value": 67749,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "stok_ambil",
+        "target": "hasil_olahan_minyak_lainnya",
+        "value": 1,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "hasil_olahan_minyak_lainnya",
+        "target": "ekspor",
+        "value": 17116,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "hasil_olahan_minyak_lainnya",
+        "target": "konsumsi_bukan_untuk_energi",
+        "value": 76456,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "impor",
+        "target": "lpg_gas_kilang",
+        "value": 313817,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "stok_ambil",
+        "target": "lpg_gas_kilang",
+        "value": 1503,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "lpg_gas_kilang",
+        "target": "konsumsi_bukan_untuk_energi",
+        "value": 196,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "lpg_gas_kilang",
+        "target": "konsumsi_sektor_energi",
+        "value": 85,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "lpg_gas_kilang",
+        "target": "industri_konstruksi_pertambangan_non_migas",
+        "value": 11098,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "lpg_gas_kilang",
+        "target": "rumah_tangga",
+        "value": 354175,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "lpg_gas_kilang",
+        "target": "pertanian",
+        "value": 25,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "lpg_gas_kilang",
+        "target": "konsumen_lainnya",
+        "value": 37550,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "produksi",
+        "target": "gas_alam",
+        "value": 2509448,
+        "keluarga": "gas"
+      },
+      {
+        "source": "gas_alam",
+        "target": "ekspor",
+        "value": 743554,
+        "keluarga": "gas"
+      },
+      {
+        "source": "gas_alam",
+        "target": "konsumsi_bukan_untuk_energi",
+        "value": 263569,
+        "keluarga": "gas"
+      },
+      {
+        "source": "gas_alam",
+        "target": "konsumsi_sektor_energi",
+        "value": 249476,
+        "keluarga": "gas"
+      },
+      {
+        "source": "gas_alam",
+        "target": "tercecer_penyaluran_pengangkutan",
+        "value": 61428,
+        "keluarga": "gas"
+      },
+      {
+        "source": "gas_alam",
+        "target": "industri_konstruksi_pertambangan_non_migas",
+        "value": 665991,
+        "keluarga": "gas"
+      },
+      {
+        "source": "gas_alam",
+        "target": "transportasi",
+        "value": 2750,
+        "keluarga": "gas"
+      },
+      {
+        "source": "gas_alam",
+        "target": "rumah_tangga",
+        "value": 3030,
+        "keluarga": "gas"
+      },
+      {
+        "source": "gas_alam",
+        "target": "konsumen_lainnya",
+        "value": 25890,
+        "keluarga": "gas"
+      },
+      {
+        "source": "impor",
+        "target": "listrik",
+        "value": 3445,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "listrik",
+        "target": "konsumsi_sektor_energi",
+        "value": 81076,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "listrik",
+        "target": "tercecer_penyaluran_pengangkutan",
+        "value": 110333,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "listrik",
+        "target": "industri_konstruksi_pertambangan_non_migas",
+        "value": 443092,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "listrik",
+        "target": "transportasi",
+        "value": 1364,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "listrik",
+        "target": "rumah_tangga",
+        "value": 471733,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "listrik",
+        "target": "pertanian",
+        "value": 2272,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "listrik",
+        "target": "konsumen_lainnya",
+        "value": 300920,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "produksi",
+        "target": "energi_biomassa",
+        "value": 217151,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "impor",
+        "target": "energi_biomassa",
+        "value": 57,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "energi_biomassa",
+        "target": "ekspor",
+        "value": 32447,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "energi_biomassa",
+        "target": "konsumsi_bukan_untuk_energi",
+        "value": 751,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "energi_biomassa",
+        "target": "industri_konstruksi_pertambangan_non_migas",
+        "value": 83759,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "energi_biomassa",
+        "target": "rumah_tangga",
+        "value": 54348,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "energi_biomassa",
+        "target": "konsumen_lainnya",
+        "value": 45903,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "produksi",
+        "target": "energi_biomassa_olahan_lainnya",
+        "value": 417441,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "energi_biomassa_olahan_lainnya",
+        "target": "ekspor",
+        "value": 809,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "produksi",
+        "target": "sumber_energi_lainnya",
+        "value": 162716,
+        "keluarga": "lainnya"
+      },
+      {
+        "source": "batubara",
+        "target": "pabrik_briket",
+        "value": 7208,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "pabrik_briket",
+        "target": "briket_kokas",
+        "value": 5634,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "pabrik_briket",
+        "target": "kehilangan",
+        "value": 1574,
+        "keluarga": "lainnya"
+      },
+      {
+        "source": "batubara",
+        "target": "pabrik_kokas",
+        "value": 204740,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "pabrik_kokas",
+        "target": "briket_kokas",
+        "value": 112191,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "pabrik_kokas",
+        "target": "kehilangan",
+        "value": 92549,
+        "keluarga": "lainnya"
+      },
+      {
+        "source": "kilang_gas",
+        "target": "lpg_gas_kilang",
+        "value": 45928,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "gas_alam",
+        "target": "kilang_gas",
+        "value": 29451,
+        "keluarga": "gas"
+      },
+      {
+        "source": "selisih",
+        "target": "kilang_gas",
+        "value": 16477,
+        "keluarga": "lainnya"
+      },
+      {
+        "source": "minyak_mentah_kondensat",
+        "target": "kilang_minyak",
+        "value": 1918324,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "kilang_minyak",
+        "target": "bbm_berkadar_ringan",
+        "value": 626324,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "kilang_minyak",
+        "target": "bbm_berkadar_berat",
+        "value": 849624,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "kilang_minyak",
+        "target": "hasil_olahan_minyak_lainnya",
+        "value": 25822,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "kilang_minyak",
+        "target": "lpg_gas_kilang",
+        "value": 41882,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "kilang_minyak",
+        "target": "kehilangan",
+        "value": 374672,
+        "keluarga": "lainnya"
+      },
+      {
+        "source": "batubara",
+        "target": "pembangkit_tenaga_listrik",
+        "value": 3744721,
+        "keluarga": "batubara"
+      },
+      {
+        "source": "bbm_berkadar_ringan",
+        "target": "pembangkit_tenaga_listrik",
+        "value": 5110,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "bbm_berkadar_berat",
+        "target": "pembangkit_tenaga_listrik",
+        "value": 192953,
+        "keluarga": "minyak"
+      },
+      {
+        "source": "gas_alam",
+        "target": "pembangkit_tenaga_listrik",
+        "value": 464309,
+        "keluarga": "gas"
+      },
+      {
+        "source": "pembangkit_tenaga_listrik",
+        "target": "listrik",
+        "value": 1407344,
+        "keluarga": "listrik"
+      },
+      {
+        "source": "energi_biomassa_olahan_lainnya",
+        "target": "pembangkit_tenaga_listrik",
+        "value": 29699,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "sumber_energi_lainnya",
+        "target": "pembangkit_tenaga_listrik",
+        "value": 162716,
+        "keluarga": "lainnya"
+      },
+      {
+        "source": "pembangkit_tenaga_listrik",
+        "target": "kehilangan",
+        "value": 3192164,
+        "keluarga": "lainnya"
+      },
+      {
+        "source": "energi_biomassa_olahan_lainnya",
+        "target": "pencampuran",
+        "value": 386933,
+        "keluarga": "biomassa"
+      },
+      {
+        "source": "pencampuran",
+        "target": "bbm_berkadar_berat",
+        "value": 386933,
+        "keluarga": "biomassa"
+      }
+    ]
+  },
+  "ringkas": {
+    "produksiTotal": 25617884,
+    "imporTotal": 2868092,
+    "eksporTotal": 14427485,
+    "konsumsiAkhirTotal": 7930428,
+    "batubaraProduksi": 21018820,
+    "batubaraEkspor": 13283923,
+    "pembangkitMasuk": 4599508,
+    "pembangkitBatubara": 3744721,
+    "listrikKeluar": 1407344,
+    "imporMinyak": 2280576,
+    "campurBiodiesel": 386933
+  },
+  "batubara": [
+    {
+      "tahun": 2020,
+      "produksi": 14258071,
+      "ekspor": 10480743,
+      "impor": 232752,
+      "konversi": 2660044,
+      "konsumsiAkhir": 1048843,
+      "pemakaianDalamNegeri": 3708887
+    },
+    {
+      "tahun": 2021,
+      "produksi": 15372660,
+      "ekspor": 10847856,
+      "impor": 388700,
+      "konversi": 2913446,
+      "konsumsiAkhir": 1152573,
+      "pemakaianDalamNegeri": 4066019
+    },
+    {
+      "tahun": 2022,
+      "produksi": 17267940,
+      "ekspor": 11470300,
+      "impor": 311497,
+      "konversi": 3454888,
+      "konsumsiAkhir": 2283681,
+      "pemakaianDalamNegeri": 5738569
+    },
+    {
+      "tahun": 2023,
+      "produksi": 19424542,
+      "ekspor": 12424117,
+      "impor": 399736,
+      "konversi": 3470268,
+      "konsumsiAkhir": 2573505,
+      "pemakaianDalamNegeri": 6043773
+    },
+    {
+      "tahun": 2024,
+      "produksi": 21018820,
+      "ekspor": 13283923,
+      "impor": 531762,
+      "konversi": 3956669,
+      "konsumsiAkhir": 2866423,
+      "pemakaianDalamNegeri": 6823092
+    }
+  ]
+}

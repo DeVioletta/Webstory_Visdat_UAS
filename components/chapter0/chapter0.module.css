@@ -1,38 +1,4 @@
-/* ================= Bab 0 ================= */
-
-.chapter {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 72px 20px 96px;
-}
-
-/* ---------- Pembuka ---------- */
-.opener {
-  max-width: 46rem;
-  margin-bottom: 56px;
-}
-
-.chapterNum {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--muted);
-  margin-bottom: 12px;
-}
-
-.headline {
-  font-size: clamp(40px, 6vw, 72px);
-  letter-spacing: -0.015em;
-  line-height: 1.02;
-  margin-bottom: 24px;
-}
-
-.lede {
-  font-family: var(--font-display);
-  font-size: clamp(19px, 2vw, 22px);
-  line-height: 1.55;
-  color: var(--ink-soft);
-  max-width: var(--measure);
-}
+/* Bab 0: gaya khusus grafik. Kerangka bab ada di components/ui/story.module.css */
 
 /* ---------- Angka utama ---------- */
 .figures {
@@ -122,47 +88,6 @@
   }
 }
 
-/* ---------- Scrollytelling ---------- */
-.scrolly {
-  display: grid;
-  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
-  grid-template-areas: "steps chart";
-  gap: 56px;
-}
-
-.sticky {
-  grid-area: chart;
-  position: sticky;
-  top: calc(var(--header-h) + 24px);
-  align-self: start;
-}
-
-.steps {
-  grid-area: steps;
-  padding: 25vh 0 40vh;
-}
-
-.step {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-}
-
-.step p {
-  font-size: 19px;
-  line-height: 1.6;
-  max-width: 26rem;
-  padding-left: 18px;
-  border-left: 3px solid var(--rule);
-  color: var(--muted);
-  transition: color 300ms ease, border-color 300ms ease;
-}
-
-.step[data-aktif="true"] p {
-  color: var(--ink);
-  border-left-color: var(--ink);
-}
-
 /* ---------- Grafik peringkat ---------- */
 .chart {
   --row-h: 36px;
@@ -186,30 +111,6 @@
 .controls {
   display: flex;
   gap: 10px;
-}
-
-.segment {
-  display: inline-flex;
-  border: 1px solid var(--ink);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.segment button {
-  border: 0;
-  background: transparent;
-  padding: 5px 12px;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.segment button + button {
-  border-left: 1px solid var(--ink);
-}
-
-.segment button[aria-pressed="true"] {
-  background: var(--ink);
-  color: var(--paper);
 }
 
 .legend {
@@ -366,68 +267,8 @@
   color: var(--muted);
 }
 
-/* ---------- Penghubung ke bab berikutnya ---------- */
-.next {
-  max-width: 40rem;
-  margin: 40px auto 0;
-  padding-top: 24px;
-  border-top: 2px solid var(--ink);
-}
-
-.nextLabel {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--muted);
-  margin-bottom: 8px;
-}
-
-.nextText {
-  font-family: var(--font-display);
-  font-size: 22px;
-  line-height: 1.45;
-}
-
 /* ---------- Ponsel & tablet kecil ---------- */
 @media (max-width: 900px) {
-  .chapter {
-    padding-top: 48px;
-  }
-
-  .scrolly {
-    grid-template-columns: 1fr;
-    grid-template-areas: "chart" "steps";
-    gap: 0;
-  }
-
-  /* Grafik menempel di atas, kotak teks bergulir melewatinya */
-  .sticky {
-    top: var(--header-h);
-    z-index: 1;
-    background: var(--paper);
-    padding-top: 12px;
-  }
-
-  .steps {
-    position: relative;
-    z-index: 2;
-    padding: 0 0 30vh;
-  }
-
-  .step {
-    min-height: 90vh;
-    align-items: flex-end;
-  }
-
-  .step p,
-  .step[data-aktif="true"] p {
-    color: var(--ink);
-    background: var(--surface);
-    border: 1px solid var(--rule);
-    border-left: 3px solid var(--ink);
-    padding: 14px 16px;
-    font-size: 17px;
-  }
-
   .chart {
     --row-h: 30px;
     --gap: 16px;

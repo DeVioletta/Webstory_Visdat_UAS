@@ -5,6 +5,7 @@ import Caption from "@/components/ui/Caption";
 import { chapter0Copy, chapter0Data, type ChartState, type ModeNilai, type Tahun } from "@/content/chapter0";
 import { angka1, bertanda, miliar, pertumbuhan } from "@/lib/format";
 import styles from "./chapter0.module.css";
+import ui from "@/components/ui/ui.module.css";
 
 type Row = (typeof chapter0Data.ranking)[number];
 
@@ -52,14 +53,14 @@ export default function RankingChart({ state, onTahun, onMode }: Props) {
           {chapter0Copy.rankingJudul}, {tahun}
         </h3>
         <div className={styles.controls}>
-          <div role="group" aria-label="Pilih tahun" className={styles.segment}>
+          <div role="group" aria-label="Pilih tahun" className={ui.segment}>
             {(["2024", "2025"] as Tahun[]).map((t) => (
               <button key={t} type="button" aria-pressed={tahun === t} onClick={() => onTahun(t)}>
                 {t}
               </button>
             ))}
           </div>
-          <div role="group" aria-label="Pilih ukuran" className={styles.segment}>
+          <div role="group" aria-label="Pilih ukuran" className={ui.segment}>
             {(
               [
                 ["nilai", "Nilai"],

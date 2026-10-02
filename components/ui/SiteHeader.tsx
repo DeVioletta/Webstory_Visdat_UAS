@@ -6,7 +6,7 @@ import styles from "./ui.module.css";
 /** Daftar bab. `siap: false` = bab belum dibuat, tampil redup dan tidak bisa diklik. */
 export const BAB = [
   { id: "skala", nomor: 0, nama: "Skala", siap: true },
-  { id: "energi", nomor: 1, nama: "Energi", siap: false },
+  { id: "energi", nomor: 1, nama: "Energi", siap: true },
   { id: "aliran", nomor: 2, nama: "Aliran dagang", siap: false },
   { id: "treemap", nomor: 3, nama: "Komoditas", siap: false },
   { id: "sunburst", nomor: 4, nama: "Perubahan", siap: false },
@@ -16,8 +16,22 @@ export const BAB = [
   { id: "penutup", nomor: 8, nama: "Penutup", siap: false },
 ] as const;
 
-export default function SiteHeader({ aktif }: { aktif: string }) {
+export default function SiteHeader() {
   const [progres, setProgres] = useState(0);
+  const [aktif, setAktif] = useState<string>(BAB[0].id);
+
+  // Bab aktif di navigasi mengikuti bab yang sedang dibaca
+  useEffect(() => {
+    const els = BAB.filter((b) => b.siap)
+      .map((b) => document.getElementById(b.id))
+      .filter((el): el is HTMLElement => Boolean(el));
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach((e) => e.isIntersecting && setAktif(e.target.id)),
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
 
   useEffect(() => {
     const update = () => {

@@ -80,3 +80,16 @@ button {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* Warna keluarga energi (Bab 1). Tetap dari palet Okabe-Ito. */
+:root {
+  --e-batubara: #14213d;
+  --e-minyak: #cc79a7;
+  --e-gas: #56b4e9;
+  --e-listrik: #e69f00;
+  --e-biomassa: #009e73;
+  --e-lainnya: #9aa5b1;
+  --node-netral: #5a6579;
+  /* pemakaian dalam negeri (grafik garis Bab 1), sengaja beda dari biru ekspor & oranye impor */
+  --domestik: #7a5195;
+}

@@ -5,7 +5,7 @@ import { useActiveStep } from "@/components/ui/useActiveStep";
 import { chapter0Copy, type ChartState, type ModeNilai, type Tahun } from "@/content/chapter0";
 import HeadlineFigures from "./HeadlineFigures";
 import RankingChart from "./RankingChart";
-import styles from "./chapter0.module.css";
+import story from "@/components/ui/story.module.css";
 
 export default function Chapter0() {
   const steps = chapter0Copy.steps;
@@ -19,33 +19,33 @@ export default function Chapter0() {
   const state: ChartState = { ...steps[aktif].chart, ...manual };
 
   return (
-    <section id="skala" className={styles.chapter} aria-labelledby="bab0-judul">
-      <header className={styles.opener}>
-        <p className={styles.chapterNum}>{chapter0Copy.nomor}</p>
-        <h2 id="bab0-judul" className={styles.headline}>
+    <section id="skala" className={story.chapter} aria-labelledby="bab0-judul">
+      <header className={story.opener}>
+        <p className={story.chapterNum}>{chapter0Copy.nomor}</p>
+        <h2 id="bab0-judul" className={story.headline}>
           {chapter0Copy.judul}
         </h2>
-        <p className={styles.lede}>{chapter0Copy.pengantar}</p>
+        <p className={story.lede}>{chapter0Copy.pengantar}</p>
       </header>
 
       <HeadlineFigures />
 
-      <div className={styles.scrolly}>
-        <div className={styles.sticky}>
+      <div className={story.scrolly}>
+        <div className={story.sticky}>
           <RankingChart
             state={state}
             onTahun={(t: Tahun) => setManual((m) => ({ ...m, tahun: t }))}
             onMode={(mo: ModeNilai) => setManual((m) => ({ ...m, mode: mo }))}
           />
         </div>
-        <div className={styles.steps}>
+        <div className={story.steps}>
           {steps.map((s, i) => (
             <article
               key={s.id}
               ref={setRef(i)}
               data-step={i}
               data-aktif={i === aktif ? "true" : undefined}
-              className={styles.step}
+              className={story.step}
             >
               <p>{s.teks}</p>
             </article>
@@ -53,9 +53,9 @@ export default function Chapter0() {
         </div>
       </div>
 
-      <aside className={styles.next}>
-        <p className={styles.nextLabel}>{chapter0Copy.penutupLabel}</p>
-        <p className={styles.nextText}>{chapter0Copy.penutup}</p>
+      <aside className={story.next}>
+        <p className={story.nextLabel}>{chapter0Copy.penutupLabel}</p>
+        <p className={story.nextText}>{chapter0Copy.penutup}</p>
       </aside>
     </section>
   );

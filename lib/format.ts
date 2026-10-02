@@ -26,3 +26,31 @@ export function bertanda(n: number, teks: string): string {
   if (n < 0) return `\u2212${teks}`;
   return teks;
 }
+
+const fmt2 = new Intl.NumberFormat("id-ID", {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
+const fmt0 = new Intl.NumberFormat("id-ID", { maximumFractionDigits: 0 });
+
+/** Energi dalam terajoule -> teks ringkas. 21018820 -> "21,02 juta TJ" */
+export function formatTJ(tj: number): string {
+  if (tj >= 1_000_000) return `${fmt2.format(tj / 1_000_000)} juta TJ`;
+  if (tj >= 1_000) return `${fmt1.format(tj / 1_000)} ribu TJ`;
+  return `${fmt0.format(tj)} TJ`;
+}
+
+/** 21018820 -> "21,0" (juta TJ, satu desimal) */
+export function jutaTJ(tj: number): string {
+  return fmt1.format(tj / 1_000_000);
+}
+
+/** Persen dengan satu desimal, tanpa tanda */
+export function persen(bagian: number, total: number): string {
+  return fmt1.format((bagian / total) * 100);
+}
+
+/** Persen dibulatkan ke bilangan bulat */
+export function persenBulat(bagian: number, total: number): string {
+  return fmt0.format((bagian / total) * 100);
+}

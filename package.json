@@ -6,14 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "data": "python3 scripts/prepare_sitc.py"
+    "data": "python3 scripts/prepare_sitc.py && python3 scripts/prepare_energi.py"
   },
   "dependencies": {
+    "d3-sankey": "^0.12.3",
+    "d3-shape": "^3.2.0",
     "next": "16.3.8",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@types/d3-sankey": "^0.12.5",
+    "@types/d3-shape": "^3.2.0",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
