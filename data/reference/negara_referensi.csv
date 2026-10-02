@@ -1,0 +1,253 @@
+nama_bps,iso3,ccn3,nama_tampil,kawasan,lat,lon
+Afganistan,AFG,004,Afganistan,Asia Selatan & Tengah,33,65
+Afrika Selatan,ZAF,710,Afrika Selatan,Afrika,-29,24
+Afrika Tengah,CAF,140,Afrika Tengah,Afrika,7,21
+Albania,ALB,008,Albania,Eropa,41,20
+Aljazair,DZA,012,Aljazair,Afrika,28,3
+Amerika Serikat,USA,840,Amerika Serikat,Amerika Utara,37.0,-100.0
+Andorra,AND,020,Andorra,Eropa,42.5,1.5
+Angola,AGO,024,Angola,Afrika,-12.5,18.5
+Anguilla,AIA,660,Anguilla,Amerika Latin & Karibia,18.25,-63.16666666
+Antarktika,ATA,010,Antarktika,Lainnya,-90,0
+Antigua dan Barbuda,ATG,028,Antigua dan Barbuda,Amerika Latin & Karibia,17.05,-61.8
+Antilla Belanda,ANT,,Antilla Belanda,Amerika Latin & Karibia,12.2,-69.0
+Arab Saudi,SAU,682,Arab Saudi,Timur Tengah,25,45
+Argentina,ARG,032,Argentina,Amerika Latin & Karibia,-34,-64
+Armenia,ARM,051,Armenia,Timur Tengah,40,45
+Aruba,ABW,533,Aruba,Amerika Latin & Karibia,12.5,-69.96666666
+Australia,AUS,036,Australia,Oseania,-30.0,145.0
+Austria,AUT,040,Austria,Eropa,47.33333333,13.33333333
+Azerbaijan,AZE,031,Azerbaijan,Timur Tengah,40.5,47.5
+Bahama,BHS,044,Bahama,Amerika Latin & Karibia,24.25,-76
+Bahrain,BHR,048,Bahrain,Timur Tengah,26,50.55
+Bangladesh,BGD,050,Bangladesh,Asia Selatan & Tengah,24,90
+Barbados,BRB,052,Barbados,Amerika Latin & Karibia,13.16666666,-59.53333333
+Belanda,NLD,528,Belanda,Eropa,52.5,5.75
+Belarus,BLR,112,Belarus,Eropa,53,28
+Belgia,BEL,056,Belgia,Eropa,50.83333333,4
+Belize,BLZ,084,Belize,Amerika Latin & Karibia,17.25,-88.75
+Benin,BEN,204,Benin,Afrika,9.5,2.25
+Bermuda,BMU,060,Bermuda,Amerika Utara,32.33333333,-64.75
+Bhutan,BTN,064,Bhutan,Asia Selatan & Tengah,27.5,90.5
+Bolivia,BOL,068,Bolivia,Amerika Latin & Karibia,-17,-65
+"Bonaire, Sint Eustatius dan Saba",BES,535,"Bonaire, Sint Eustatius dan Saba",Amerika Latin & Karibia,12.18,-68.25
+Bosnia-Herzegovina,BIH,070,Bosnia-Herzegovina,Eropa,44,18
+Botswana,BWA,072,Botswana,Afrika,-22,24
+Brasil,BRA,076,Brasil,Amerika Latin & Karibia,-15.0,-48.0
+Brunei Darussalam,BRN,096,Brunei Darussalam,Asia Tenggara,4.5,114.66666666
+Bulgaria,BGR,100,Bulgaria,Eropa,43,25
+Burkina Faso,BFA,854,Burkina Faso,Afrika,13,-2
+Burundi,BDI,108,Burundi,Afrika,-3.5,30
+Chad,TCD,148,Chad,Afrika,15,19
+Cile,CHL,152,Cile,Amerika Latin & Karibia,-30,-71
+Curacao,CUW,531,Curacao,Amerika Latin & Karibia,12.116667,-68.933333
+Denmark,DNK,208,Denmark,Eropa,56,10
+Dominika,DMA,212,Dominika,Amerika Latin & Karibia,15.41666666,-61.33333333
+Ekuador,ECU,218,Ekuador,Amerika Latin & Karibia,-2,-77.5
+El Salvador,SLV,222,El Salvador,Amerika Latin & Karibia,13.83333333,-88.91666666
+Eritrea,ERI,232,Eritrea,Afrika,15,39
+Estonia,EST,233,Estonia,Eropa,59,26
+Etiopia,ETH,231,Etiopia,Afrika,8,38
+Fiji,FJI,242,Fiji,Oseania,-18,175
+Filipina,PHL,608,Filipina,Asia Tenggara,13,122
+Finlandia,FIN,246,Finlandia,Eropa,64,26
+Gabon,GAB,266,Gabon,Afrika,-1,11.75
+Gambia,GMB,270,Gambia,Afrika,13.46666666,-16.56666666
+Georgia,GEO,268,Georgia,Timur Tengah,42,43.5
+Georgia Selatan dan Kepulauan Sandwich Selatan,SGS,239,Georgia Selatan dan Kepulauan Sandwich Selatan,Lainnya,-54.5,-37
+Ghana,GHA,288,Ghana,Afrika,8,-2
+Gibraltar,GIB,292,Gibraltar,Eropa,36.13333333,-5.35
+Greenlandia,GRL,304,Greenlandia,Amerika Utara,72,-40
+Grenada,GRD,308,Grenada,Amerika Latin & Karibia,12.11666666,-61.66666666
+Guadeloupe,GLP,312,Guadeloupe,Amerika Latin & Karibia,16.25,-61.583333
+Guam,GUM,316,Guam,Oseania,13.46666666,144.78333333
+Guatemala,GTM,320,Guatemala,Amerika Latin & Karibia,15.5,-90.25
+Guernsey,GGY,831,Guernsey,Eropa,49.46666666,-2.58333333
+Guinea,GIN,324,Guinea,Afrika,11,-10
+Guinea Bissau,GNB,624,Guinea Bissau,Afrika,12,-15
+Guinea Ekuatorial,GNQ,226,Guinea Ekuatorial,Afrika,2,10
+Guyana,GUY,328,Guyana,Amerika Latin & Karibia,5,-59
+Guyana Prancis,GUF,254,Guyana Prancis,Amerika Latin & Karibia,4,-53
+Haiti,HTI,332,Haiti,Amerika Latin & Karibia,19,-72.41666666
+Honduras,HND,340,Honduras,Amerika Latin & Karibia,15,-86.5
+Hong Kong,HKG,344,Hong Kong,Asia Timur,22.267,114.188
+Hungaria,HUN,348,Hungaria,Eropa,47,20
+India,IND,356,India,Asia Selatan & Tengah,21.0,78.0
+Indonesia,IDN,360,Indonesia,Asia Tenggara,-5,120
+Inggris,GBR,826,Inggris,Eropa,54,-2
+Irak,IRQ,368,Irak,Timur Tengah,33,44
+Iran,IRN,364,Iran,Asia Selatan & Tengah,32,53
+Irlandia,IRL,372,Irlandia,Eropa,53,-8
+Islandia,ISL,352,Islandia,Eropa,65,-18
+Israel,ISR,376,Israel,Timur Tengah,31.47,35.13
+Italia,ITA,380,Italia,Eropa,42.83333333,12.83333333
+Jamaika,JAM,388,Jamaika,Amerika Latin & Karibia,18.25,-77.5
+Jepang,JPN,392,Jepang,Asia Timur,36,138
+Jerman,DEU,276,Jerman,Eropa,51,9
+Jersey,JEY,832,Jersey,Eropa,49.25,-2.16666666
+Jibuti,DJI,262,Jibuti,Afrika,11.5,43
+Kaledonia Baru,NCL,540,Kaledonia Baru,Oseania,-21.5,165.5
+Kamboja,KHM,116,Kamboja,Asia Tenggara,13,105
+Kamerun,CMR,120,Kamerun,Afrika,6,12
+Kanada,CAN,124,Kanada,Amerika Utara,49.0,-95.0
+Kazakstan,KAZ,398,Kazakstan,Asia Selatan & Tengah,48,68
+Kenya,KEN,404,Kenya,Afrika,1,38
+Kepulauan Aland,ALA,248,Kepulauan Aland,Eropa,60.116667,19.9
+Kepulauan Cayman,CYM,136,Kepulauan Cayman,Amerika Latin & Karibia,19.5,-80.5
+Kepulauan Christmas,CXR,162,Kepulauan Christmas,Oseania,-10.5,105.66666666
+Kepulauan Cocos (Keeling),CCK,166,Kepulauan Cocos (Keeling),Oseania,-12.5,96.83333333
+Kepulauan Cook,COK,184,Kepulauan Cook,Oseania,-21.23333333,-159.76666666
+Kepulauan Faeroe,FRO,234,Kepulauan Faeroe,Eropa,62,-7
+Kepulauan Falkland,FLK,238,Kepulauan Falkland,Amerika Latin & Karibia,-51.75,-59
+Kepulauan Mariana Utara,MNP,580,Kepulauan Mariana Utara,Oseania,15.2,145.75
+Kepulauan Marshall,MHL,584,Kepulauan Marshall,Oseania,9,168
+Kepulauan Norfolk,NFK,574,Kepulauan Norfolk,Oseania,-29.03333333,167.95
+Kepulauan Solomon,SLB,090,Kepulauan Solomon,Oseania,-8,159
+Kepulauan Terluar Kecil AS,UMI,581,Kepulauan Terluar Kecil AS,Amerika Utara,19.3,166.633333
+Kepulauan Virgin (AS),VIR,850,Kepulauan Virgin (AS),Amerika Latin & Karibia,18.35,-64.933333
+Kepulauan Virgin (Britania),VGB,092,Kepulauan Virgin (Britania),Amerika Latin & Karibia,18.431383,-64.62305
+Kepulauan Virgin (British),VGB,092,Kepulauan Virgin (Britania),Amerika Latin & Karibia,18.431383,-64.62305
+Kirgistan,KGZ,417,Kirgistan,Asia Selatan & Tengah,41,75
+Kiribati,KIR,296,Kiribati,Oseania,1.41666666,173
+Kolombia,COL,170,Kolombia,Amerika Latin & Karibia,4,-72
+Komoro,COM,174,Komoro,Afrika,-12.16666666,44.25
+Kongo,COG,178,Kongo,Afrika,-1,15
+Korea Selatan,KOR,410,Korea Selatan,Asia Timur,37,127.5
+Korea Utara,PRK,408,Korea Utara,Asia Timur,40,127
+Kosovo,UNK,,Kosovo,Eropa,42.666667,21.166667
+Kosta Rika,CRI,188,Kosta Rika,Amerika Latin & Karibia,10,-84
+Kroasia,HRV,191,Kroasia,Eropa,45.16666666,15.5
+Kuba,CUB,192,Kuba,Amerika Latin & Karibia,21.5,-80
+Kuwait,KWT,414,Kuwait,Timur Tengah,29.5,45.75
+Laos,LAO,418,Laos,Asia Tenggara,18,105
+Latvia,LVA,428,Latvia,Eropa,57,25
+Lebanon,LBN,422,Lebanon,Timur Tengah,33.83333333,35.83333333
+Lesotho,LSO,426,Lesotho,Afrika,-29.5,28.5
+Liberia,LBR,430,Liberia,Afrika,6.5,-9.5
+Libia,LBY,434,Libia,Afrika,25,17
+Libya,LBY,434,Libia,Afrika,25,17
+Liechtenstein,LIE,438,Liechtenstein,Eropa,47.26666666,9.53333333
+Lituania,LTU,440,Lituania,Eropa,56,24
+Luksemburg,LUX,442,Luksemburg,Eropa,49.75,6.16666666
+Madagaskar,MDG,450,Madagaskar,Afrika,-20,47
+Makau,MAC,446,Makau,Asia Timur,22.16666666,113.55
+Makedonia,MKD,807,Makedonia,Eropa,41.83333333,22
+Maladewa,MDV,462,Maladewa,Asia Selatan & Tengah,3.25,73
+Malawi,MWI,454,Malawi,Afrika,-13.5,34
+Malaysia,MYS,458,Malaysia,Asia Tenggara,2.5,112.5
+Mali,MLI,466,Mali,Afrika,17,-4
+Malta,MLT,470,Malta,Eropa,35.83333333,14.58333333
+Maroko,MAR,504,Maroko,Afrika,32,-5
+Martinik,MTQ,474,Martinik,Amerika Latin & Karibia,14.666667,-61
+Mauritania,MRT,478,Mauritania,Afrika,20,-12
+Mauritius,MUS,480,Mauritius,Afrika,-20.28333333,57.55
+Mayotte,MYT,175,Mayotte,Afrika,-12.83333333,45.16666666
+Meksiko,MEX,484,Meksiko,Amerika Utara,23,-102
+Mesir,EGY,818,Mesir,Afrika,27,30
+Mikronesia,FSM,583,Mikronesia,Oseania,6.91666666,158.25
+Moldova,MDA,498,Moldova,Eropa,47,29
+Monako,MCO,492,Monako,Eropa,43.73333333,7.4
+Mongolia,MNG,496,Mongolia,Asia Timur,46,105
+Montenegro,MNE,499,Montenegro,Eropa,42.5,19.3
+Montserrat,MSR,500,Montserrat,Amerika Latin & Karibia,16.75,-62.2
+Mozambik,MOZ,508,Mozambik,Afrika,-18.25,35
+Myanmar,MMR,104,Myanmar,Asia Tenggara,22,98
+Namibia,NAM,516,Namibia,Afrika,-22,17
+Nauru,NRU,520,Nauru,Oseania,-0.53333333,166.91666666
+Nepal,NPL,524,Nepal,Asia Selatan & Tengah,28,84
+Niger,NER,562,Niger,Afrika,16,8
+Nigeria,NGA,566,Nigeria,Afrika,10,8
+Nikaragua,NIC,558,Nikaragua,Amerika Latin & Karibia,13,-85
+Niue,NIU,570,Niue,Oseania,-19.03333333,-169.86666666
+Norwegia,NOR,578,Norwegia,Eropa,62,10
+Oman,OMN,512,Oman,Timur Tengah,21,57
+Pakistan,PAK,586,Pakistan,Asia Selatan & Tengah,30,70
+Palau,PLW,585,Palau,Oseania,7.5,134.5
+Palestina,PSE,275,Palestina,Timur Tengah,31.9,35.2
+Panama,PAN,591,Panama,Amerika Latin & Karibia,9,-80
+Pantai Gading,CIV,384,Pantai Gading,Afrika,8,-5
+Papua Nugini,PNG,598,Papua Nugini,Oseania,-6,147
+Paraguay,PRY,600,Paraguay,Amerika Latin & Karibia,-23,-58
+Peru,PER,604,Peru,Amerika Latin & Karibia,-10,-76
+Pitcairn,PCN,612,Pitcairn,Oseania,-25.06666666,-130.1
+Polandia,POL,616,Polandia,Eropa,52,20
+Polinesia Prancis,PYF,258,Polinesia Prancis,Oseania,-15,-140
+Portugal,PRT,620,Portugal,Eropa,39.5,-8
+Prancis,FRA,250,Prancis,Eropa,46,2
+Puerto Riko,PRI,630,Puerto Riko,Amerika Latin & Karibia,18.25,-66.5
+Pulau Bouvet,BVT,074,Pulau Bouvet,Lainnya,-54.43333333,3.4
+Pulau Heard dan Kepulauan McDonald,HMD,334,Pulau Heard dan Kepulauan McDonald,Lainnya,-53.1,72.51666666
+Pulau Man,IMN,833,Pulau Man,Eropa,54.25,-4.5
+Qatar,QAT,634,Qatar,Timur Tengah,25.5,51.25
+Republik Cheska,CZE,203,Republik Cheska,Eropa,49.75,15.5
+Republik Demokratik Kongo,COD,180,Republik Demokratik Kongo,Afrika,0,25
+Republik Dominika,DOM,214,Republik Dominika,Amerika Latin & Karibia,19,-70.66666666
+Reunion,REU,638,Reunion,Afrika,-21.15,55.5
+Rumania,ROU,642,Rumania,Eropa,46,25
+Rusia,RUS,643,Rusia,Eropa,56.0,40.0
+Rwanda,RWA,646,Rwanda,Afrika,-2,30
+Sahara Barat,ESH,732,Sahara Barat,Afrika,24.5,-13
+Saint Barthelemy,BLM,652,Saint Barthelemy,Amerika Latin & Karibia,18.5,-63.41666666
+Saint Kitts dan Nevis,KNA,659,Saint Kitts dan Nevis,Amerika Latin & Karibia,17.33333333,-62.75
+Saint Martin (Bagian Prancis),MAF,663,Saint Martin (Bagian Prancis),Amerika Latin & Karibia,18.08333333,-63.95
+Saint Vincent dan Grenadin,VCT,670,Saint Vincent dan Grenadin,Amerika Latin & Karibia,13.25,-61.2
+Samoa,WSM,882,Samoa,Oseania,-13.58333333,-172.33333333
+Samoa Amerika,ASM,016,Samoa Amerika,Oseania,-14.33333333,-170
+San Marino,SMR,674,San Marino,Eropa,43.76666666,12.41666666
+Santa Helena,SHN,654,Santa Helena,Afrika,-15.95,-5.72
+Santa Lusia,LCA,662,Santa Lusia,Amerika Latin & Karibia,13.88333333,-60.96666666
+Sao Tome dan Principe,STP,678,Sao Tome dan Principe,Afrika,1,7
+Selandia Baru,NZL,554,Selandia Baru,Oseania,-41,174
+Senegal,SEN,686,Senegal,Afrika,14,-14
+Serbia,SRB,688,Serbia,Eropa,44,21
+Seychelles,SYC,690,Seychelles,Afrika,-4.58333333,55.66666666
+Sierra Leone,SLE,694,Sierra Leone,Afrika,8.5,-11.5
+Singapura,SGP,702,Singapura,Asia Tenggara,1.36666666,103.8
+Sint Maarten (Bagian Belanda),SXM,534,Sint Maarten (Bagian Belanda),Amerika Latin & Karibia,18.033333,-63.05
+Siprus,CYP,196,Siprus,Eropa,35,33
+Slovakia,SVK,703,Slovakia,Eropa,48.66666666,19.5
+Slovenia,SVN,705,Slovenia,Eropa,46.11666666,14.81666666
+Somalia,SOM,706,Somalia,Afrika,10,49
+Spanyol,ESP,724,Spanyol,Eropa,40,-4
+Sri Lanka,LKA,144,Sri Lanka,Asia Selatan & Tengah,7,81
+Sudan,SDN,729,Sudan,Afrika,15,30
+Sudan Selatan,SSD,728,Sudan Selatan,Afrika,7,30
+Suriah,SYR,760,Suriah,Timur Tengah,35,38
+Suriname,SUR,740,Suriname,Amerika Latin & Karibia,4,-56
+Svalbard dan Jan Mayen,SJM,744,Svalbard dan Jan Mayen,Eropa,78,20
+Swaziland,SWZ,748,Swaziland,Afrika,-26.5,31.5
+Swedia,SWE,752,Swedia,Eropa,62,15
+Swiss,CHE,756,Swiss,Eropa,47,8
+Taiwan,TWN,158,Taiwan,Asia Timur,23.5,121
+Tajikistan,TJK,762,Tajikistan,Asia Selatan & Tengah,39,71
+Tanjung Verde,CPV,132,Tanjung Verde,Afrika,16,-24
+Tanzania,TZA,834,Tanzania,Afrika,-6,35
+Thailand,THA,764,Thailand,Asia Tenggara,15,100
+Timor Leste,TLS,626,Timor Leste,Asia Tenggara,-8.83333333,125.91666666
+Tiongkok,CHN,156,Tiongkok,Asia Timur,32.0,114.0
+Togo,TGO,768,Togo,Afrika,8,1.16666666
+Tokelau,TKL,772,Tokelau,Oseania,-9,-172
+Tonga,TON,776,Tonga,Oseania,-20,-175
+Trinidad dan Tobago,TTO,780,Trinidad dan Tobago,Amerika Latin & Karibia,11,-61
+Tunisia,TUN,788,Tunisia,Afrika,34,9
+Turki,TUR,792,Turki,Timur Tengah,39,35
+Turkmenistan,TKM,795,Turkmenistan,Asia Selatan & Tengah,40,60
+Turks dan Kepulauan Caicos,TCA,796,Turks dan Kepulauan Caicos,Amerika Latin & Karibia,21.75,-71.58333333
+Tuvalu,TUV,798,Tuvalu,Oseania,-8,178
+Uganda,UGA,800,Uganda,Afrika,1,32
+Ukraina,UKR,804,Ukraina,Eropa,49,32
+Uni Emirat Arab,ARE,784,Uni Emirat Arab,Timur Tengah,24,54
+Uruguay,URY,858,Uruguay,Amerika Latin & Karibia,-33,-56
+Uzbekistan,UZB,860,Uzbekistan,Asia Selatan & Tengah,41,64
+Vanuatu,VUT,548,Vanuatu,Oseania,-16,167
+Vatikan,VAT,336,Vatikan,Eropa,41.9,12.45
+Venezuela,VEN,862,Venezuela,Amerika Latin & Karibia,8,-66
+Vietnam,VNM,704,Vietnam,Asia Tenggara,16.16666666,107.83333333
+Wallis dan Futuna,WLF,876,Wallis dan Futuna,Oseania,-13.3,-176.2
+Wilayah Samudra Hindia Britania,IOT,086,Wilayah Samudra Hindia Britania,Afrika,-6,71.5
+Wilayah Selatan Prancis,ATF,260,Wilayah Selatan Prancis,Lainnya,-49.25,69.167
+Yaman,YEM,887,Yaman,Timur Tengah,15,48
+Yordania,JOR,400,Yordania,Timur Tengah,31,36
+Yunani,GRC,300,Yunani,Eropa,39,22
+Zambia,ZMB,894,Zambia,Afrika,-15,30
+Zimbabwe,ZWE,716,Zimbabwe,Afrika,-20,30

@@ -7,7 +7,7 @@ import styles from "./ui.module.css";
 export const BAB = [
   { id: "skala", nomor: 0, nama: "Skala", siap: true },
   { id: "energi", nomor: 1, nama: "Energi", siap: true },
-  { id: "aliran", nomor: 2, nama: "Aliran dagang", siap: false },
+  { id: "aliran", nomor: 2, nama: "Aliran dagang", siap: true },
   { id: "treemap", nomor: 3, nama: "Komoditas", siap: false },
   { id: "sunburst", nomor: 4, nama: "Perubahan", siap: false },
   { id: "pdrb", nomor: 5, nama: "PDRB", siap: false },

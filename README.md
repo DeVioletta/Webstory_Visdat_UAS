@@ -25,6 +25,12 @@ npm run data                     # menjalankan kedua skrip di bawah
   lalu menulis `data/processed/chapter1.json`. Perbedaan yang sudah diketahui dari
   publikasi BPS dicatat di bagian atas skrip. Kalau muncul ketidakcocokan baru,
   skrip berhenti dan menampilkan selnya.
+- `scripts/prepare_negara.py` membaca ekspor-impor per negara, mencocokkan nama
+  negara dengan `data/reference/negara_referensi.csv`, mengecek total terhadap data
+  SITC, lalu menulis `data/processed/chapter2.json`.
+- `scripts/build_referensi_negara.py` (jarang perlu) membuat ulang tabel referensi
+  negara. Jalankan hanya jika BPS memakai nama negara baru; tambahkan dulu namanya
+  ke kamus `ISO` di dalam skrip.
 
 ## Struktur folder
 
@@ -33,9 +39,11 @@ app/                 halaman dan gaya global
 components/ui/       komponen bersama (header, caption, hook scroll, kerangka bab)
 components/chapter0/ komponen Bab 0
 components/chapter1/ komponen Bab 1 (Sankey dan grafik garis batu bara)
+components/chapter2/ komponen Bab 2 (flow map dan grafik neraca per mitra)
 content/             semua teks webstory, dipisah dari kode
 data/raw/            file Excel asli dari BPS
 data/processed/      JSON hasil olahan yang di-import kode
+data/reference/      tabel referensi negara (kode ISO, kawasan, koordinat)
 public/data/         JSON yang diambil lewat fetch di browser
 lib/                 fungsi format angka
 scripts/             skrip Python pengolah data
