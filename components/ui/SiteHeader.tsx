@@ -11,7 +11,7 @@ export const BAB = [
   { id: "treemap", nomor: 3, nama: "Komoditas", siap: true },
   { id: "sunburst", nomor: 4, nama: "Perubahan", siap: true },
   { id: "pdrb", nomor: 5, nama: "PDRB", siap: true },
-  { id: "massa", nomor: 6, nama: "Massa ekonomi", siap: false },
+  { id: "massa", nomor: 6, nama: "Massa ekonomi", siap: true },
   { id: "tipologi", nomor: 7, nama: "Tipologi", siap: false },
   { id: "penutup", nomor: 8, nama: "Penutup", siap: false },
 ] as const;

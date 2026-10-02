@@ -1,0 +1,407 @@
+/* Bab 6: gaya khusus peta dan grafik. Kerangka bab ada di components/ui/story.module.css */
+
+.figure {
+  margin: 0;
+}
+
+.title {
+  font-size: 22px;
+  max-width: 38rem;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.select {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.select select {
+  font: inherit;
+  font-size: 13px;
+  padding: 4px 8px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+/* ---------- Legenda ---------- */
+.legends {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px 28px;
+  margin-bottom: 8px;
+}
+
+.legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0;
+  padding: 0;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.unit {
+  color: var(--muted);
+}
+
+.swatch {
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid rgba(20, 33, 61, 0.25);
+}
+
+.symbolLegend {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.symbolLegend ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+}
+
+.legendCircle {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+
+/* ---------- Peta ---------- */
+.mapWrap {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  touch-action: pan-y;
+  overflow: hidden;
+}
+
+.mapWrap[data-zoom="true"] {
+  cursor: grab;
+  touch-action: none;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.region {
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 0.4px;
+  transition: fill 450ms ease, opacity 300ms ease;
+}
+
+.region[data-redup="true"] {
+  opacity: 0.3;
+}
+
+.provLine {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 0.9px;
+  stroke-opacity: 0.5;
+  pointer-events: none;
+}
+
+.highlight {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2px;
+  pointer-events: none;
+}
+
+.symbol {
+  fill: rgba(0, 114, 178, 0.45);
+  stroke: #005a8c;
+  stroke-width: 0.8;
+  cursor: pointer;
+  transition: opacity 300ms ease;
+}
+
+.symbol[data-aktif="true"],
+.symbol[data-sorot="true"] {
+  fill: rgba(0, 114, 178, 0.8);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.symbol[data-redup="true"] {
+  opacity: 0.35;
+}
+
+.mapLabel {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.zoomControls {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  display: flex;
+  gap: 4px;
+}
+
+.zoomControls button {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  font-size: 13px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.zoomControls button:nth-child(-n + 2) {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.zoomControls button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 3;
+  width: 240px;
+  padding: 8px 10px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--ink);
+  font-size: 13px;
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+.tipTitle {
+  font-weight: 700;
+}
+
+.tipTitle span {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.tipGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 10px;
+  margin: 4px 0 0;
+}
+
+.tipGrid dt {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.tipGrid dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* ---------- Ketimpangan ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 14px 16px;
+  background: var(--surface);
+  border-top: 3px solid var(--ink);
+}
+
+.cardLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.cardValue {
+  font-family: var(--font-display);
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 4px 0 6px;
+}
+
+.cardNote {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.lorenzGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.lorenzWrap svg {
+  display: block;
+}
+
+.lorenzArea {
+  fill: rgba(0, 114, 178, 0.12);
+}
+
+.lorenzSide {
+  padding: 12px 14px;
+  background: var(--surface);
+  border-left: 3px solid var(--ink);
+  font-size: 15px;
+}
+
+.axis {
+  font-size: 11.5px;
+  fill: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.pulauLegend {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 13px;
+}
+
+.pulauLegend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pulau {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pulau li {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr) 3.5rem;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.pulauName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pulauBars {
+  display: grid;
+  gap: 3px;
+}
+
+.pulauBars span {
+  position: relative;
+  display: block;
+  height: 12px;
+  min-width: 2px;
+}
+
+.pulauBars em {
+  position: absolute;
+  left: calc(100% + 6px);
+  top: -2px;
+  font-style: normal;
+  font-size: 12px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.pulauRatio {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 19px;
+  }
+
+  .cards,
+  .lorenzGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pulau li {
+    grid-template-columns: 7rem minmax(0, 1fr) 3rem;
+  }
+}
