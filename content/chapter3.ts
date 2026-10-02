@@ -74,6 +74,15 @@ export const chapter3Copy = {
 
   treemapJudul: "Struktur perdagangan Indonesia menurut kelompok komoditas SITC",
 
+  // Penjelasan cara membaca, tampil di atas treemap
+  bacaAngka: "Angka di dalam kotak adalah nilai perdagangan dalam miliar USD, yaitu ekspor ditambah impor.",
+  bacaWarna:
+    "Warna adalah indeks spesialisasi perdagangan: (ekspor \u2212 impor) / (ekspor + impor). Nilainya +1 jika hanya ada ekspor, \u22121 jika hanya ada impor, dan 0 jika keduanya sama besar.",
+
+  // Alasan emas moneter dikeluarkan, tampil di bawah treemap
+  catatanEmas:
+    "Emas moneter tidak dimasukkan. Emas jenis ini dipegang otoritas moneter sebagai cadangan devisa, sehingga diperlakukan sebagai aset keuangan, bukan barang dagangan, dan tidak termasuk dalam kelompok komoditas SITC mana pun. Nilainya tetap terhitung dalam total ekspor dan impor di Bab 0. Emas nonmoneter, yaitu emas batangan dan setengah jadi yang diperdagangkan sebagai barang, tetap masuk di Division 97.",
+
   steps: [
     {
       id: "t1",
@@ -86,11 +95,13 @@ export const chapter3Copy = {
     },
     {
       id: "t2",
-      teks: `Bahan bakar mineral tampak seimbang, indeksnya hanya ${formatIsp(
+      teks: `Bahan bakar mineral terlihat hampir seimbang, indeksnya hanya ${formatIsp(
         ispN(s3, "2025")
-      )}. Tapi di dalamnya ada dua arah yang berlawanan: batu bara dan briket sangat condong ekspor (${formatIsp(
+      )}. Angka itu muncul karena dua hal saling menutupi: batu bara dan briket hampir seluruhnya diekspor (${formatIsp(
         ispN(d32, "2025")
-      )}), sedangkan minyak bumi dan produknya condong impor (${formatIsp(ispN(d33, "2025"))}). Ini paradoks energi dari Bab 1, kali ini dalam dolar.`,
+      )}), sementara minyak bumi dan produknya lebih banyak diimpor (${formatIsp(
+        ispN(d33, "2025")
+      )}). Indonesia menjual batu bara, tapi membeli minyak. Pola yang sama terlihat di aliran energi pada Bab 1.`,
       state: { tahun: "2025", fokus: "3" },
     },
     {

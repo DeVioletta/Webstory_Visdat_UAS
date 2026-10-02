@@ -1,0 +1,251 @@
+/* Bab 4: gaya khusus grafik. Kerangka bab ada di components/ui/story.module.css */
+
+.figure {
+  margin: 0;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  max-width: 30rem;
+}
+
+.howto {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border-left: 3px solid var(--rule);
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.howto p + p {
+  margin-top: 2px;
+}
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li + li::before {
+  content: "\203A";
+  margin: 0 8px;
+  color: var(--muted);
+}
+
+.breadcrumb li button {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: var(--ekspor);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.breadcrumb [aria-current] {
+  font-weight: 700;
+}
+
+.up {
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  padding: 3px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ---------- Tubuh: sunburst + panel samping ---------- */
+.body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 15rem);
+  gap: 20px;
+  align-items: start;
+}
+
+.chartBox {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slice {
+  cursor: pointer;
+  outline: none;
+}
+
+.slice path {
+  stroke: var(--paper);
+  stroke-width: 0.6;
+  transition: opacity 200ms ease;
+}
+
+.slice[data-hover="true"] path,
+.slice:focus-visible path {
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.sliceLabel {
+  font-size: 11px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.center {
+  cursor: pointer;
+  outline: none;
+}
+
+.center circle {
+  fill: var(--surface);
+  stroke: var(--rule);
+}
+
+.center:focus-visible circle {
+  stroke: var(--ekspor);
+  stroke-width: 2;
+}
+
+.centerSmall {
+  font-size: 11px;
+  fill: var(--muted);
+}
+
+.centerBig {
+  font-family: var(--font-display);
+  font-size: 22px;
+  fill: var(--ink);
+}
+
+.centerGrowth {
+  font-size: 13px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+
+/* ---------- Panel samping ---------- */
+.side {
+  display: grid;
+  gap: 14px;
+}
+
+.legendTitle {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.gradient {
+  position: relative;
+  display: block;
+  height: 10px;
+  margin: 0 22px 18px;
+}
+
+.gradient i {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+  font-style: normal;
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.legendNote {
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.inspector {
+  padding: 10px 12px;
+  background: var(--surface);
+  border-left: 3px solid var(--ink);
+  font-size: 13.5px;
+}
+
+.inspectorTitle {
+  font-weight: 700;
+}
+
+.inspectorSub {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.inspectorGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 10px;
+  margin: 0;
+}
+
+.inspectorGrid dt {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.inspectorGrid dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.unit {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 19px;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .chartBox {
+    max-width: 360px;
+  }
+}

@@ -37,7 +37,7 @@ export default function Treemap({ state, onChange }: Props) {
     return () => ro.disconnect();
   }, []);
 
-  const tinggi = ponsel ? 400 : 440;
+  const tinggi = ponsel ? 400 : 420;
   const jalur = useMemo(() => cariJalur(fokus) ?? cariJalur("root")!, [fokus]);
   const fokusNode = jalur[jalur.length - 1];
   // Dua tingkat ditampilkan sekaligus: kelompok (kedalaman 1) dan isinya (kedalaman 2)
@@ -81,6 +81,11 @@ export default function Treemap({ state, onChange }: Props) {
         </div>
       </div>
 
+      <div className={styles.howto}>
+        <p>{chapter3Copy.bacaAngka}</p>
+        <p>{chapter3Copy.bacaWarna}</p>
+      </div>
+
       <nav aria-label="Posisi dalam hirarki komoditas" className={styles.breadcrumb}>
         <ol>
           {jalur.map((n, i) => (
@@ -112,7 +117,6 @@ export default function Treemap({ state, onChange }: Props) {
           <i style={{ left: "100%" }}>+1</i>
         </span>
         <span>Hanya ekspor</span>
-        <span className={styles.legendNote}>Warna = indeks spesialisasi perdagangan. Ukuran = ekspor + impor.</span>
       </div>
 
       <div
@@ -181,8 +185,8 @@ export default function Treemap({ state, onChange }: Props) {
 
       <Caption
         judul={`${chapter3Copy.treemapJudul}, ${tahun}`}
-        satuan="miliar USD (ukuran kotak); indeks spesialisasi perdagangan, −1 sampai +1 (warna)"
-        catatan="Hirarki: Section (1 digit), Division (2 digit), Group (3 digit). Indeks = (ekspor − impor) / (ekspor + impor), dihitung dari nilai yang dijumlahkan di tiap tingkat. Emas moneter tidak dimasukkan. Label Section dan Division adalah terjemahan bebas nomenklatur SITC Rev.4."
+        satuan={"miliar USD (angka di kotak); indeks spesialisasi perdagangan, \u22121 sampai +1 (warna)"}
+        catatan={`${chapter3Copy.catatanEmas} Hirarki: Section (1 digit), Division (2 digit), Group (3 digit). Indeks di tiap tingkat dihitung dari ekspor dan impor yang dijumlahkan, bukan dari rata-rata indeks di bawahnya. Label Section dan Division adalah terjemahan bebas nomenklatur SITC Rev.4.`}
       />
     </figure>
   );

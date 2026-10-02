@@ -18,6 +18,21 @@
   max-width: 34rem;
 }
 
+/* ---------- Cara membaca (di atas treemap) ---------- */
+.howto {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border-left: 3px solid var(--rule);
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.howto p + p {
+  margin-top: 2px;
+}
+
 /* ---------- Breadcrumb ---------- */
 .breadcrumb {
   display: flex;
@@ -90,12 +105,6 @@
   font-style: normal;
   font-size: 11px;
   color: var(--muted);
-}
-
-.legendNote {
-  flex-basis: 100%;
-  color: var(--muted);
-  margin-top: 6px;
 }
 
 /* ---------- Kanvas treemap ---------- */

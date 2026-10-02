@@ -29,7 +29,8 @@ npm run data                     # menjalankan kedua skrip di bawah
   negara dengan `data/reference/negara_referensi.csv`, mengecek total terhadap data
   SITC, lalu menulis `data/processed/chapter2.json`.
 - `scripts/prepare_treemap.py` menyusun hirarki SITC (Section, Division, Group)
-  dengan label Indonesia untuk Bab 3 dan Bab 4, menulis `data/processed/chapter3.json`.
+  dengan label Indonesia, menulis `data/processed/chapter3.json`. File ini dipakai
+  bersama oleh Bab 3 (treemap) dan Bab 4 (sunburst).
 - `scripts/build_referensi_negara.py` (jarang perlu) membuat ulang tabel referensi
   negara. Jalankan hanya jika BPS memakai nama negara baru; tambahkan dulu namanya
   ke kamus `ISO` di dalam skrip.
@@ -43,6 +44,7 @@ components/chapter0/ komponen Bab 0
 components/chapter1/ komponen Bab 1 (Sankey dan grafik garis batu bara)
 components/chapter2/ komponen Bab 2 (flow map dan grafik neraca per mitra)
 components/chapter3/ komponen Bab 3 (treemap dan daftar surplus/defisit)
+components/chapter4/ komponen Bab 4 (sunburst perubahan 2024 ke 2025)
 content/             semua teks webstory, dipisah dari kode
 data/raw/            file Excel asli dari BPS
 data/processed/      JSON hasil olahan yang di-import kode

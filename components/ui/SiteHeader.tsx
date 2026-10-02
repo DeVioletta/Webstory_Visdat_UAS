@@ -9,7 +9,7 @@ export const BAB = [
   { id: "energi", nomor: 1, nama: "Energi", siap: true },
   { id: "aliran", nomor: 2, nama: "Aliran dagang", siap: true },
   { id: "treemap", nomor: 3, nama: "Komoditas", siap: true },
-  { id: "sunburst", nomor: 4, nama: "Perubahan", siap: false },
+  { id: "sunburst", nomor: 4, nama: "Perubahan", siap: true },
   { id: "pdrb", nomor: 5, nama: "PDRB", siap: false },
   { id: "massa", nomor: 6, nama: "Massa ekonomi", siap: false },
   { id: "spasial", nomor: 7, nama: "Pola spasial", siap: false },
