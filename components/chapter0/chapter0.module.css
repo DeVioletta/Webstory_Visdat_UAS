@@ -1,0 +1,468 @@
+/* ================= Bab 0 ================= */
+
+.chapter {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 72px 20px 96px;
+}
+
+/* ---------- Pembuka ---------- */
+.opener {
+  max-width: 46rem;
+  margin-bottom: 56px;
+}
+
+.chapterNum {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.headline {
+  font-size: clamp(40px, 6vw, 72px);
+  letter-spacing: -0.015em;
+  line-height: 1.02;
+  margin-bottom: 24px;
+}
+
+.lede {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 2vw, 22px);
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: var(--measure);
+}
+
+/* ---------- Angka utama ---------- */
+.figures {
+  margin: 0 0 88px;
+}
+
+.figuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 2px solid var(--ink);
+}
+
+.figure {
+  padding: 20px 24px 8px 0;
+}
+
+.figure + .figure {
+  padding-left: 24px;
+  border-left: 1px solid var(--rule);
+}
+
+.figureLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.figureValue {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 4.6vw, 60px);
+  line-height: 1.05;
+  margin: 6px 0 4px;
+}
+
+.figureUnit {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.figureDelta {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.pair {
+  display: grid;
+  gap: 6px;
+}
+
+.pairRow {
+  display: grid;
+  grid-template-columns: 38px 1fr 44px;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pairTrack {
+  height: 10px;
+  background: var(--paper-deep);
+}
+
+.pairBar {
+  display: block;
+  height: 100%;
+}
+
+.pairValue {
+  text-align: right;
+}
+
+@media (max-width: 760px) {
+  .figuresGrid {
+    grid-template-columns: 1fr;
+  }
+  .figure,
+  .figure + .figure {
+    padding: 18px 0 18px;
+    border-left: 0;
+  }
+  .figure + .figure {
+    border-top: 1px solid var(--rule);
+  }
+}
+
+/* ---------- Scrollytelling ---------- */
+.scrolly {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  grid-template-areas: "steps chart";
+  gap: 56px;
+}
+
+.sticky {
+  grid-area: chart;
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  align-self: start;
+}
+
+.steps {
+  grid-area: steps;
+  padding: 25vh 0 40vh;
+}
+
+.step {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.step p {
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 26rem;
+  padding-left: 18px;
+  border-left: 3px solid var(--rule);
+  color: var(--muted);
+  transition: color 300ms ease, border-color 300ms ease;
+}
+
+.step[data-aktif="true"] p {
+  color: var(--ink);
+  border-left-color: var(--ink);
+}
+
+/* ---------- Grafik peringkat ---------- */
+.chart {
+  --row-h: 36px;
+  --gap: 22px;
+  margin: 0;
+}
+
+.chartHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin-bottom: 12px;
+}
+
+.chartTitle {
+  font-size: 24px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.segment {
+  display: inline-flex;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.segment button {
+  border: 0;
+  background: transparent;
+  padding: 5px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.segment button + button {
+  border-left: 1px solid var(--ink);
+}
+
+.segment button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.swatch {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
+.rows {
+  position: relative;
+  height: calc(var(--row-h) * 11 + var(--gap));
+}
+
+.row {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: var(--row-h);
+  display: grid;
+  grid-template-columns: 24px minmax(0, 13rem) minmax(0, 1fr) 6.5rem;
+  align-items: center;
+  gap: 10px;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 650ms cubic-bezier(0.22, 1, 0.36, 1), opacity 300ms ease;
+}
+
+.row:hover,
+.row[data-aktif="true"] {
+  background: var(--paper-deep);
+}
+
+.row[data-luar="true"] {
+  opacity: 0.55;
+}
+
+.rank {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-align: right;
+}
+
+.rowLabel {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track {
+  height: 16px;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  transition: width 650ms cubic-bezier(0.22, 1, 0.36, 1), background-color 300ms ease;
+}
+
+.rowValue {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.delta {
+  margin-left: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.cutoff {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--row-h) * 10 + var(--gap) / 2);
+  border-top: 1px dashed var(--rule);
+  pointer-events: none;
+}
+
+.cutoff span {
+  position: absolute;
+  right: 0;
+  top: -9px;
+  padding-left: 6px;
+  background: var(--paper);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ---------- Panel rincian (tooltip) ---------- */
+.inspector {
+  min-height: 92px;
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border-left: 3px solid var(--ink);
+}
+
+.inspectorTitle {
+  font-weight: 700;
+}
+
+.inspectorSub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inspectorGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.inspectorGrid dt {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.inspectorGrid dd {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.inspectorHint {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---------- Penghubung ke bab berikutnya ---------- */
+.next {
+  max-width: 40rem;
+  margin: 40px auto 0;
+  padding-top: 24px;
+  border-top: 2px solid var(--ink);
+}
+
+.nextLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.nextText {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+/* ---------- Ponsel & tablet kecil ---------- */
+@media (max-width: 900px) {
+  .chapter {
+    padding-top: 48px;
+  }
+
+  .scrolly {
+    grid-template-columns: 1fr;
+    grid-template-areas: "chart" "steps";
+    gap: 0;
+  }
+
+  /* Grafik menempel di atas, kotak teks bergulir melewatinya */
+  .sticky {
+    top: var(--header-h);
+    z-index: 1;
+    background: var(--paper);
+    padding-top: 12px;
+  }
+
+  .steps {
+    position: relative;
+    z-index: 2;
+    padding: 0 0 30vh;
+  }
+
+  .step {
+    min-height: 90vh;
+    align-items: flex-end;
+  }
+
+  .step p,
+  .step[data-aktif="true"] p {
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--ink);
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+
+  .chart {
+    --row-h: 30px;
+    --gap: 16px;
+  }
+
+  .chartTitle {
+    font-size: 19px;
+  }
+
+  .row {
+    grid-template-columns: 18px minmax(0, 9.5rem) minmax(0, 1fr) 3.4rem;
+    gap: 6px;
+  }
+
+  .rowLabel,
+  .rowValue {
+    font-size: 12px;
+  }
+
+  .track {
+    height: 12px;
+  }
+
+  /* Selisih dipindah ke panel rincian di layar kecil supaya baris tidak terlalu sempit */
+  .delta {
+    display: none;
+  }
+
+  .inspector {
+    min-height: 0;
+    padding: 8px 12px;
+  }
+
+  .inspectorGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px 8px;
+  }
+}

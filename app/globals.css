@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap");
+
+/*
+ * Token warna. Palet data mengikuti Okabe-Ito (aman untuk buta warna).
+ * Konvensi di seluruh webstory:
+ *   ekspor = biru, impor = oranye (dipakai lagi untuk palet diverging ISP di Bab 3)
+ */
+:root {
+  --paper: #eef1f4;
+  --paper-deep: #e2e7ed;
+  --surface: #f8f9fb;
+  --ink: #14213d;
+  --ink-soft: #3d4a63;
+  --muted: #5a6579;
+  --rule: #c3ccd7;
+
+  --ekspor: #0072b2;
+  --impor: #d55e00;
+  --batubara: #14213d;
+  --sawit: #009e73;
+  --sorot-lain: #56b4e9;
+  --bar-netral: #b5c0cc;
+
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --header-h: 56px;
+  --measure: 34rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: var(--header-h);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ekspor);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

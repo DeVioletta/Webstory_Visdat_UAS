@@ -1,0 +1,147 @@
+{
+  "satuan": "juta USD",
+  "totals": {
+    "2024": {
+      "ekspor": 266529.176,
+      "impor": 235199.603,
+      "neraca": 31329.574
+    },
+    "2025": {
+      "ekspor": 282505.283,
+      "impor": 241362.615,
+      "neraca": 41142.668
+    }
+  },
+  "ranking": [
+    {
+      "kode": "422",
+      "label": "Minyak nabati (sawit)",
+      "namaResmi": "Fixed vegetable fats and oils, crude, refined or fractionated, other than “soft”",
+      "ekspor2024": 22596.01,
+      "ekspor2025": 28426.916,
+      "share2024": 8.48,
+      "share2025": 10.06,
+      "rank2024": 2,
+      "rank2025": 1
+    },
+    {
+      "kode": "321",
+      "label": "Batu bara",
+      "namaResmi": "Coal, whether or not pulverized, but not agglomerated",
+      "ekspor2024": 30489.507,
+      "ekspor2025": 24481.391,
+      "share2024": 11.44,
+      "share2025": 8.67,
+      "rank2024": 1,
+      "rank2025": 2
+    },
+    {
+      "kode": "671",
+      "label": "Besi kasar & feroaloi",
+      "namaResmi": "Pig-iron, spiegeleisen, sponge iron, iron or steel granules and powders and ferro-alloys",
+      "ekspor2024": 14379.42,
+      "ekspor2025": 16698.675,
+      "share2024": 5.4,
+      "share2025": 5.91,
+      "rank2024": 3,
+      "rank2025": 3
+    },
+    {
+      "kode": "512",
+      "label": "Alkohol, fenol & turunannya",
+      "namaResmi": "Alcohols, phenols, phenol-alcohols, and their halogenated, sulphonated, nitrated or nitrosated derivatives",
+      "ekspor2024": 6314.276,
+      "ekspor2025": 9422.088,
+      "share2024": 2.37,
+      "share2025": 3.34,
+      "rank2024": 9,
+      "rank2025": 4
+    },
+    {
+      "kode": "284",
+      "label": "Bijih & produk antara nikel",
+      "namaResmi": "Nickel ores and concentrates; nickel mattes, nickel oxide sinters and other intermediate products of nickel metallurgy",
+      "ekspor2024": 7123.818,
+      "ekspor2025": 8366.198,
+      "share2024": 2.67,
+      "share2025": 2.96,
+      "rank2024": 8,
+      "rank2025": 5
+    },
+    {
+      "kode": "851",
+      "label": "Alas kaki",
+      "namaResmi": "Footwear",
+      "ekspor2024": 7281.275,
+      "ekspor2025": 7974.003,
+      "share2024": 2.73,
+      "share2025": 2.82,
+      "rank2024": 7,
+      "rank2025": 6
+    },
+    {
+      "kode": "897",
+      "label": "Perhiasan",
+      "namaResmi": "Jewellery, goldsmiths' and silversmiths' wares, and other articles of precious or semiprecious materials, n.e.s.",
+      "ekspor2024": 5326.23,
+      "ekspor2025": 7911.866,
+      "share2024": 2.0,
+      "share2025": 2.8,
+      "rank2024": 11,
+      "rank2025": 7
+    },
+    {
+      "kode": "343",
+      "label": "Gas alam & LNG",
+      "namaResmi": "Natural gas, whether or not liquefied",
+      "ekspor2024": 8907.731,
+      "ekspor2025": 7192.758,
+      "share2024": 3.34,
+      "share2025": 2.55,
+      "rank2024": 4,
+      "rank2025": 8
+    },
+    {
+      "kode": "781",
+      "label": "Mobil penumpang",
+      "namaResmi": "Motor cars and other motor vehicles principally designed for the transport of persons (other than motor vehicles for the transport of ten or more persons, including the driver), including station-wagons and racing cars",
+      "ekspor2024": 6000.464,
+      "ekspor2025": 6451.819,
+      "share2024": 2.25,
+      "share2025": 2.28,
+      "rank2024": 10,
+      "rank2025": 9
+    },
+    {
+      "kode": "322",
+      "label": "Briket, lignit & gambut",
+      "namaResmi": "Briquettes, lignite and peat",
+      "ekspor2024": 7341.103,
+      "ekspor2025": 5716.429,
+      "share2024": 2.75,
+      "share2025": 2.02,
+      "rank2024": 6,
+      "rank2025": 10
+    },
+    {
+      "kode": "283",
+      "label": "Bijih & konsentrat tembaga",
+      "namaResmi": "Copper ores and concentrates; copper mattes; cement copper",
+      "ekspor2024": 7987.815,
+      "ekspor2025": 4875.271,
+      "share2024": 3.0,
+      "share2025": 1.73,
+      "rank2024": 5,
+      "rank2025": 11
+    }
+  ],
+  "top10Share": {
+    "2024": 44.43,
+    "2025": 43.41
+  },
+  "jumlahKodeEkspor2025": 254,
+  "emasMoneter": {
+    "ekspor2025": 1187.513,
+    "catatan": "Termasuk di total nasional, dikeluarkan dari ranking komoditas."
+  }
+}
