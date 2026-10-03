@@ -120,9 +120,9 @@ export const chapter7Copy = {
  */
 export const PENULIS = {
   judul: "Disusun oleh",
-  nama: [{ nama: "[Nama lengkap]", keterangan: "[NIM]" }],
-  mataKuliah: "[Nama mata kuliah]",
-  institusi: "[Program studi, universitas]",
+  nama: [{ nama: "Amrestya Gaia Bujjhati Isbandi", keterangan: "222312969" }],
+  mataKuliah: "Visualisasi Data",
+  institusi: "Politeknik Statistika STIS",
   tahun: "2026",
 };
 
