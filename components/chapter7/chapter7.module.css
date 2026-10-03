@@ -1,0 +1,465 @@
+/* Penutup. Kerangka bab ada di components/ui/story.module.css */
+
+.figure {
+  margin: 0;
+}
+
+/* ---------- Tiga temuan ---------- */
+.findings {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  border-top: 2px solid var(--ink);
+}
+
+.finding {
+  position: relative;
+  padding: 20px 24px 22px 0;
+}
+
+.finding + .finding {
+  padding-left: 24px;
+  border-left: 1px solid var(--rule);
+}
+
+/* Panah penghubung antar-temuan */
+.finding + .finding::before {
+  content: "\2192";
+  position: absolute;
+  left: -11px;
+  top: 18px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.step {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.step span {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 12px;
+}
+
+.findingTitle {
+  font-size: 24px;
+  margin: 10px 0 12px;
+}
+
+.big {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 4.5vw, 56px);
+  line-height: 1;
+}
+
+.bigNote {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 6px 0 12px;
+}
+
+.findingText {
+  font-size: 15.5px;
+  color: var(--ink-soft);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 12px;
+  font-size: 13.5px;
+}
+
+.links a {
+  color: var(--ekspor);
+}
+
+.scale {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.scaleLine {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--rule), var(--ink-soft));
+}
+
+.sources {
+  margin-top: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/* ---------- Kutipan & jawaban ---------- */
+.quote {
+  max-width: 44rem;
+  margin: 72px auto;
+  padding: 0;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.6vw, 44px);
+  line-height: 1.2;
+}
+
+.answer {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.answer p {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+.answer .limit {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  color: var(--muted);
+  padding: 12px 14px;
+  background: var(--surface);
+  border-left: 3px solid var(--rule);
+  margin-top: 24px;
+}
+
+/* ---------- Cek daerahmu ---------- */
+.searchRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px 16px;
+  margin-bottom: 16px;
+}
+
+.search {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.search input {
+  font: inherit;
+  font-weight: 400;
+  font-size: 15px;
+  width: 18rem;
+  padding: 7px 10px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.suggest {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.suggest button {
+  padding: 5px 10px;
+  font-size: 13px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.suggest button[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.profileName {
+  font-family: var(--font-display);
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.profileName span {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+  margin: 0;
+}
+
+.stats > div {
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+}
+
+.stats dt {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.stats dd {
+  margin: 2px 0;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stats small {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.strip {
+  margin-top: 22px;
+}
+
+.stripLabel {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 26px;
+}
+
+.stripTrack {
+  position: relative;
+  height: 22px;
+  background: var(--surface);
+}
+
+.stripTick {
+  position: absolute;
+  top: 3px;
+  width: 2px;
+  height: 16px;
+  transform: translateX(-1px);
+  opacity: 0.9;
+}
+
+.stripNational,
+.stripMark {
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  width: 2px;
+  transform: translateX(-1px);
+}
+
+.stripNational {
+  background: var(--ink-soft);
+}
+
+.stripMark {
+  width: 4px;
+  transform: translateX(-2px);
+  background: var(--impor);
+}
+
+.stripNational em,
+.stripMark em {
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: normal;
+  font-size: 11.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.stripNational em {
+  top: calc(100% + 2px);
+  bottom: auto;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.stripAxis {
+  position: relative;
+  height: 30px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.stripAxis span {
+  position: absolute;
+  top: 16px;
+  transform: translateX(-50%);
+}
+
+/* Label di ujung strip ditarik ke dalam supaya tidak keluar layar */
+.stripMark[data-ujung="kanan"] em {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+.stripMark[data-ujung="kiri"] em {
+  left: 0;
+  transform: none;
+}
+
+.strip {
+  overflow-x: clip;
+}
+
+.empty {
+  padding: 16px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+/* ---------- Metodologi ---------- */
+.method details {
+  border-top: 1px solid var(--rule);
+  padding: 12px 0;
+}
+
+.method details:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.method summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.method ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+
+.method li + li {
+  margin-top: 6px;
+}
+
+.method p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.method dl {
+  margin: 10px 0 0;
+  font-size: 14.5px;
+}
+
+.method dt {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.method dd {
+  margin: 2px 0 0;
+  color: var(--ink-soft);
+}
+
+/* ---------- Tombol akhir ---------- */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 64px;
+}
+
+.actions button {
+  padding: 10px 18px;
+  font-size: 15px;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (max-width: 900px) {
+  .findings {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .finding,
+  .finding + .finding {
+    padding: 20px 0;
+    border-left: 0;
+  }
+
+  .finding + .finding {
+    border-top: 1px solid var(--rule);
+  }
+
+  .finding + .finding::before {
+    content: "\2193";
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+  }
+
+  .scale {
+    display: none;
+  }
+
+  .profile,
+  .stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+  }
+}

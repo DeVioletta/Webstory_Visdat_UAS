@@ -57,6 +57,7 @@ components/chapter3/ komponen Bab 3 (treemap dan daftar surplus/defisit)
 components/chapter4/ komponen Bab 4 (sunburst perubahan 2024 ke 2025)
 components/chapter5/ komponen Bab 5 (peta PDRB per kapita, histogram, diagram Moran)
 components/chapter6/ komponen Bab 6 (peta provinsi/kab/kota + simbol, Lorenz, porsi pulau)
+components/chapter7/ komponen Penutup (tiga temuan, cek daerahmu, catatan metodologi)
 content/             semua teks webstory, dipisah dari kode
 data/raw/            file Excel asli dari BPS
 data/processed/      JSON hasil olahan yang di-import kode

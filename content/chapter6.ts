@@ -121,9 +121,9 @@ export const chapter6Copy = {
     bnt.porsiPenduduk
   )} persen penduduk tapi hanya menghasilkan ${angka1(bnt.porsiPdrb)} persen PDRB. Ketimpangan Indonesia lebih banyak terjadi di dalam pulau dan provinsi daripada antarpulau.`,
 
-  penutupLabel: "Berikutnya, Bab 7",
+  penutupLabel: "Berikutnya, Penutup",
   penutup:
-    "Peta menunjukkan posisi tiap daerah hari ini. Bab berikutnya bertanya ke mana arahnya: apakah daerah yang tertinggal tumbuh lebih cepat untuk mengejar, atau justru semakin tertinggal.",
+    "Dari aliran energi sampai kabupaten dan kota, saatnya merangkum: di mana kekayaan Indonesia tercatat, dan di mana ia tidak merata.",
 };
 
 export const chapter6Data = data;

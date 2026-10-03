@@ -6,6 +6,7 @@ import Chapter3 from "@/components/chapter3/Chapter3";
 import Chapter4 from "@/components/chapter4/Chapter4";
 import Chapter5 from "@/components/chapter5/Chapter5";
 import Chapter6 from "@/components/chapter6/Chapter6";
+import Chapter7 from "@/components/chapter7/Chapter7";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <Chapter4 />
         <Chapter5 />
         <Chapter6 />
-        {/* Bab berikutnya ditambahkan di sini: <Chapter7 />, <Chapter8 />. */}
+        <Chapter7 />
       </main>
     </>
   );
