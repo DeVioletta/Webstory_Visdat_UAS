@@ -111,7 +111,7 @@ export default function Treemap({ state, onChange }: Props) {
 
       <div className={styles.legend}>
         <span>Hanya impor</span>
-        <span className={styles.gradient} style={{ background: GRADIEN_ISP }} aria-hidden="true">
+        <span className={styles.gradient} style={{ backgroundImage: GRADIEN_ISP }} aria-hidden="true">
           <i style={{ left: "0%" }}>{"\u22121"}</i>
           <i style={{ left: "50%" }}>0</i>
           <i style={{ left: "100%" }}>+1</i>
@@ -164,7 +164,7 @@ export default function Treemap({ state, onChange }: Props) {
                 top: n.y0,
                 width: w,
                 height: h,
-                background: warnaIsp(v),
+                backgroundColor: warnaIsp(v),
                 color: teksDiAtas(v),
               }}
               onMouseEnter={() => tampilRinci(n)}

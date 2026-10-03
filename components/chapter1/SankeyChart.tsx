@@ -155,7 +155,7 @@ export default function SankeyChart({ fokus, onFokus }: Props) {
               aria-pressed={fokus.jenis === "keluarga" && fokus.id === k.id}
               onClick={() => onFokus({ jenis: "keluarga", id: k.id })}
             >
-              <span className={styles.swatch} style={{ background: k.warna }} aria-hidden="true" />
+              <span className={styles.swatch} style={{ backgroundColor: k.warna }} aria-hidden="true" />
               {k.label}
             </button>
           ))}

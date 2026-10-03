@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Caption from "@/components/ui/Caption";
 import { chapter0Copy, chapter0Data, type ChartState, type ModeNilai, type Tahun } from "@/content/chapter0";
-import { angka1, bertanda, miliar, pertumbuhan } from "@/lib/format";
+import { angka1, bertanda, miliar, pertumbuhan, pctCss } from "@/lib/format";
 import styles from "./chapter0.module.css";
 import ui from "@/components/ui/ui.module.css";
 
@@ -81,13 +81,13 @@ export default function RankingChart({ state, onTahun, onMode }: Props) {
             <li key={r.kode}>
               <span
                 className={styles.swatch}
-                style={{ background: WARNA_SOROT[r.kode] ?? "var(--sorot-lain)" }}
+                style={{ backgroundColor: WARNA_SOROT[r.kode] ?? "var(--sorot-lain)" }}
               />
               {r.label}
             </li>
           ))}
           <li>
-            <span className={styles.swatch} style={{ background: "var(--bar-netral)" }} />
+            <span className={styles.swatch} style={{ backgroundColor: "var(--bar-netral)" }} />
             Komoditas lain
           </li>
         </ul>
@@ -120,7 +120,7 @@ export default function RankingChart({ state, onTahun, onMode }: Props) {
               <span className={styles.track}>
                 <span
                   className={styles.bar}
-                  style={{ width: `${(v / maks) * 100}%`, background: warnaBatang(r, rank) }}
+                  style={{ width: pctCss((v / maks) * 100), backgroundColor: warnaBatang(r, rank) }}
                 />
               </span>
               <span className={styles.rowValue}>

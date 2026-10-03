@@ -247,7 +247,7 @@ export default function Sunburst({ state, onChange }: Props) {
         <aside className={styles.side}>
           <div className={styles.legend}>
             <p className={styles.legendTitle}>Perubahan 2024 ke 2025</p>
-            <span className={styles.gradient} style={{ background: GRADIEN_TUMBUH }} aria-hidden="true">
+            <span className={styles.gradient} style={{ backgroundImage: GRADIEN_TUMBUH }} aria-hidden="true">
               <i style={{ left: "0%" }}>{`\u2264\u2212${BATAS_TUMBUH}%`}</i>
               <i style={{ left: "50%" }}>0</i>
               <i style={{ left: "100%" }}>{`\u2265+${BATAS_TUMBUH}%`}</i>

@@ -230,7 +230,7 @@ export default function PdrbMap({ state, onChange, ringkas = false, judul }: Pro
       <ul className={styles.legend} aria-label="Legenda">
         {legenda.map((l) => (
           <li key={l.label}>
-            <span className={styles.swatch} style={{ background: l.warna }} />
+            <span className={styles.swatch} style={{ backgroundColor: l.warna }} />
             {l.label}
             <small> ({l.n})</small>
           </li>
@@ -438,7 +438,7 @@ function Isi({ d, lapisan, metode }: { d: Daerah; lapisan: Lapisan; metode: Meto
       <dl className={styles.tipGrid}>
         <div>
           <dt>PDRB per kapita</dt>
-          <dd>{juta(d.nilai)} juta Rp</dd>
+          <dd>Rp{juta(d.nilai)} juta</dd>
         </div>
         <div>
           <dt>Peringkat</dt>

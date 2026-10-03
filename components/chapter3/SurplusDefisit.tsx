@@ -4,7 +4,7 @@ import { useState } from "react";
 import Caption from "@/components/ui/Caption";
 import ui from "@/components/ui/ui.module.css";
 import { chapter3Copy, TREE, type SitcNode, type Tahun3 } from "@/content/chapter3";
-import { miliar } from "@/lib/format";
+import { miliar, pctCss } from "@/lib/format";
 import styles from "./chapter3.module.css";
 
 const JUMLAH = 6;
@@ -31,7 +31,7 @@ export default function SurplusDefisit() {
                 <small> SITC {n.id}</small>
               </span>
               <span className={styles.listBar}>
-                <span style={{ width: `${(Math.abs(v) / maks) * 100}%`, background: warna }} />
+                <span style={{ width: pctCss((Math.abs(v) / maks) * 100), backgroundColor: warna }} />
               </span>
               <span className={styles.listValue}>
                 {v >= 0 ? "+" : "\u2212"}

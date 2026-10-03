@@ -113,4 +113,17 @@ export const chapter7Copy = {
   cekTeks: "Pilih satu kabupaten atau kota untuk melihat posisinya dalam semua ukuran yang dipakai di webstory ini.",
 };
 
+/**
+ * Identitas pembuat, tampil di bagian paling bawah penutup.
+ * GANTI isian dalam kurung siku dengan data yang sebenarnya.
+ * Untuk kelompok, tambahkan beberapa objek di dalam daftar `nama`.
+ */
+export const PENULIS = {
+  judul: "Disusun oleh",
+  nama: [{ nama: "[Nama lengkap]", keterangan: "[NIM]" }],
+  mataKuliah: "[Nama mata kuliah]",
+  institusi: "[Program studi, universitas]",
+  tahun: "2026",
+};
+
 export const chapter7Data = { ch5, ch6 };

@@ -59,7 +59,7 @@ export default function MoranScatter() {
             aria-pressed={pilih === k}
             onClick={() => setPilih((p) => (p === k ? null : k))}
           >
-            <span className={styles.swatch} style={{ background: WARNA_LISA[k] }} />
+            <span className={styles.swatch} style={{ backgroundColor: WARNA_LISA[k] }} />
             {LABEL_LISA[k].singkat} ({D.filter((d) => d.lisa === k).length})
           </button>
         ))}
@@ -130,7 +130,7 @@ export default function MoranScatter() {
           <div className={styles.inspector} aria-live="polite">
             {hover ? (
               <p>
-                <strong>{hover.nama}</strong>, {hover.provinsi}: {juta(hover.nilai)} juta Rp. {LABEL_LISA[hover.lisa].arti}
+                <strong>{hover.nama}</strong>, {hover.provinsi}: Rp{juta(hover.nilai)} juta. {LABEL_LISA[hover.lisa].arti}
                 {hover.lisa === "NS" ? "" : ` (p = ${hover.p.toFixed(3).replace(".", ",")})`}.
               </p>
             ) : (

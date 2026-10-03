@@ -120,7 +120,7 @@ export default function MassaMap({ state, onChange }: Props) {
           <ul className={styles.legend} aria-label="Legenda warna">
             {KELAS_PDRB.map((b, i) => (
               <li key={b}>
-                <span className={styles.swatch} style={{ background: PALET_PDRB[i] }} />
+                <span className={styles.swatch} style={{ backgroundColor: PALET_PDRB[i] }} />
                 {i === 0 ? `\u2264 ${jutaRp(b)}` : `${jutaRp(KELAS_PDRB[i - 1])} \u2013 ${jutaRp(b)}`}
               </li>
             ))}
@@ -300,7 +300,7 @@ function IsiKab({ d }: { d: DaerahMassa }) {
       <dl className={styles.tipGrid}>
         <div>
           <dt>PDRB total</dt>
-          <dd>{triliun(d.total)} triliun</dd>
+          <dd>Rp{triliun(d.total)} triliun</dd>
         </div>
         <div>
           <dt>Peringkat total</dt>
@@ -308,7 +308,7 @@ function IsiKab({ d }: { d: DaerahMassa }) {
         </div>
         <div>
           <dt>PDRB per kapita</dt>
-          <dd>{jutaRp(d.perKapita)} juta</dd>
+          <dd>Rp{jutaRp(d.perKapita)} juta</dd>
         </div>
         <div>
           <dt>Peringkat per kapita</dt>
@@ -330,7 +330,7 @@ function IsiProv({ p }: { p: ProvinsiMassa }) {
       <dl className={styles.tipGrid}>
         <div>
           <dt>PDRB per kapita provinsi</dt>
-          <dd>{jutaRp(p.nilai)} juta</dd>
+          <dd>Rp{jutaRp(p.nilai)} juta</dd>
         </div>
         <div>
           <dt>Jumlah kab/kota</dt>
@@ -339,7 +339,7 @@ function IsiProv({ p }: { p: ProvinsiMassa }) {
         <div className={styles.full}>
           <dt>Rentang di dalamnya</dt>
           <dd>
-            {p.terendah.nama} {jutaRp(p.terendah.nilai)} juta sampai {p.tertinggi.nama} {jutaRp(p.tertinggi.nilai)} juta
+            {p.terendah.nama} Rp{jutaRp(p.terendah.nilai)} juta sampai {p.tertinggi.nama} Rp{jutaRp(p.tertinggi.nilai)} juta
           </dd>
         </div>
       </dl>

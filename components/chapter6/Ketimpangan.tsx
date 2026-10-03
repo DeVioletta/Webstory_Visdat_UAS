@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Caption from "@/components/ui/Caption";
 import { chapter6Data } from "@/content/chapter6";
-import { angka1 } from "@/lib/format";
+import { angka1, pctCss } from "@/lib/format";
 import styles from "./chapter6.module.css";
 
 const N = chapter6Data.nasional;
@@ -125,10 +125,10 @@ export function PulauBars() {
     <figure className={styles.figure}>
       <ul className={styles.pulauLegend} aria-hidden="true">
         <li>
-          <span className={styles.swatch} style={{ background: "var(--ink)" }} /> Porsi PDRB
+          <span className={styles.swatch} style={{ backgroundColor: "var(--ink)" }} /> Porsi PDRB
         </li>
         <li>
-          <span className={styles.swatch} style={{ background: "var(--e-gas)" }} /> Porsi penduduk
+          <span className={styles.swatch} style={{ backgroundColor: "var(--e-gas)" }} /> Porsi penduduk
         </li>
       </ul>
       <ul className={styles.pulau}>
@@ -138,10 +138,10 @@ export function PulauBars() {
             <li key={p.nama} aria-label={`${p.nama}: ${angka1(p.porsiPdrb)} persen PDRB, ${angka1(p.porsiPenduduk)} persen penduduk`}>
               <span className={styles.pulauName}>{p.nama}</span>
               <span className={styles.pulauBars}>
-                <span style={{ width: `${(p.porsiPdrb / maks) * 82}%`, background: "var(--ink)" }}>
+                <span style={{ width: pctCss((p.porsiPdrb / maks) * 82), backgroundColor: "var(--ink)" }}>
                   <em>{angka1(p.porsiPdrb)}%</em>
                 </span>
-                <span style={{ width: `${(p.porsiPenduduk / maks) * 82}%`, background: "var(--e-gas)" }}>
+                <span style={{ width: pctCss((p.porsiPenduduk / maks) * 82), backgroundColor: "var(--e-gas)" }}>
                   <em>{angka1(p.porsiPenduduk)}%</em>
                 </span>
               </span>

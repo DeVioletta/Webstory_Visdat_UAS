@@ -1,6 +1,6 @@
 import Caption from "@/components/ui/Caption";
 import { chapter0Copy, chapter0Data } from "@/content/chapter0";
-import { angka1, miliar, pertumbuhan } from "@/lib/format";
+import { angka1, miliar, pertumbuhan, pctCss } from "@/lib/format";
 import styles from "./chapter0.module.css";
 
 type Kunci = "ekspor" | "impor" | "neraca";
@@ -46,8 +46,8 @@ export default function HeadlineFigures() {
                       <span
                         className={styles.pairBar}
                         style={{
-                          width: `${(b.nilai / maks) * 100}%`,
-                          background: warna,
+                          width: pctCss((b.nilai / maks) * 100),
+                          backgroundColor: warna,
                           opacity: b.opacity,
                         }}
                       />

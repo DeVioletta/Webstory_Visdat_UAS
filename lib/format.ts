@@ -66,3 +66,12 @@ export function formatIsp(v: number): string {
   const s = new Intl.NumberFormat("id-ID", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(Math.abs(v));
   return v < 0 ? `\u2212${s}` : v > 0 ? `+${s}` : s;
 }
+
+/**
+ * Nilai persen untuk CSS (left/width), dibulatkan 3 desimal.
+ * Angka desimal panjang bisa diserialisasi berbeda oleh server dan browser
+ * sehingga memicu peringatan hydration mismatch di React.
+ */
+export function pctCss(v: number): string {
+  return `${Math.round(v * 1000) / 1000}%`;
+}

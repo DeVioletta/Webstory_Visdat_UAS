@@ -424,6 +424,55 @@
   color: var(--paper);
 }
 
+/* ---------- Pembuat ---------- */
+.author {
+  max-width: 40rem;
+  margin: 56px auto 0;
+  padding-top: 24px;
+  border-top: 2px solid var(--ink);
+  text-align: center;
+}
+
+.authorLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.author ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 28px;
+}
+
+.author li {
+  display: grid;
+  gap: 2px;
+}
+
+.author strong {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.author li span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.authorMeta {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
 @media (max-width: 900px) {
   .findings {
     grid-template-columns: minmax(0, 1fr);

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Caption from "@/components/ui/Caption";
 import ui from "@/components/ui/ui.module.css";
 import { CATATAN_NILAI, chapter2Copy, chapter2Data, neraca, type Mitra, type Tahun2 } from "@/content/chapter2";
-import { miliar } from "@/lib/format";
+import { miliar, pctCss } from "@/lib/format";
 import styles from "./chapter2.module.css";
 
 const JUMLAH = 15;
@@ -62,9 +62,9 @@ export default function NeracaBars() {
                   <span
                     className={styles.barFill}
                     style={{
-                      left: n >= 0 ? "50%" : `${50 - lebar}%`,
-                      width: `${lebar}%`,
-                      background: n >= 0 ? "var(--ekspor)" : "var(--impor)",
+                      left: n >= 0 ? "50%" : pctCss(50 - lebar),
+                      width: pctCss(lebar),
+                      backgroundColor: n >= 0 ? "var(--ekspor)" : "var(--impor)",
                     }}
                   />
                 </span>

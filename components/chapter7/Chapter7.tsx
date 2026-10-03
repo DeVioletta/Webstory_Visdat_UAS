@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import story from "@/components/ui/story.module.css";
-import { chapter7Copy } from "@/content/chapter7";
+import { chapter7Copy, PENULIS } from "@/content/chapter7";
 import CekDaerah from "./CekDaerah";
 import Metodologi from "./Metodologi";
 import styles from "./chapter7.module.css";
@@ -102,6 +102,22 @@ export default function Chapter7() {
           {tersalin ? "Tautan tersalin" : "Salin tautan webstory"}
         </button>
       </div>
+
+      <footer className={styles.author} aria-label="Pembuat webstory">
+        <p className={styles.authorLabel}>{PENULIS.judul}</p>
+        <ul>
+          {PENULIS.nama.map((n) => (
+            <li key={n.nama}>
+              <strong>{n.nama}</strong>
+              {n.keterangan ? <span>{n.keterangan}</span> : null}
+            </li>
+          ))}
+        </ul>
+        <p className={styles.authorMeta}>
+          {PENULIS.mataKuliah} &middot; {PENULIS.institusi} &middot; {PENULIS.tahun}
+        </p>
+        <p className={styles.authorMeta}>Sumber data utama: Badan Pusat Statistik (BPS).</p>
+      </footer>
     </section>
   );
 }

@@ -6,7 +6,7 @@ import PdrbMap, { kelasDari } from "@/components/chapter5/PdrbMap";
 import { LABEL_LISA, type Wilayah } from "@/content/chapter5";
 import { chapter7Copy, chapter7Data } from "@/content/chapter7";
 import { PALET_PDRB, WARNA_LISA } from "@/lib/color";
-import { angka1 } from "@/lib/format";
+import { angka1, pctCss } from "@/lib/format";
 import styles from "./chapter7.module.css";
 
 const { ch5, ch6 } = chapter7Data;
@@ -86,7 +86,7 @@ export default function CekDaerah() {
             <dl className={styles.stats}>
               <div>
                 <dt>PDRB per kapita</dt>
-                <dd>{jt(pk.nilai)} juta Rp</dd>
+                <dd>Rp{jt(pk.nilai)} juta</dd>
                 <small>
                   peringkat {RANK_PK.get(pk.id)} dari {ch5.daerah.length};{" "}
                   {pk.nilai >= nasional ? `${angka1(pk.nilai / nasional)} kali` : `${angka1((pk.nilai / nasional) * 100)}% dari`} rata-rata nasional
@@ -94,7 +94,7 @@ export default function CekDaerah() {
               </div>
               <div>
                 <dt>PDRB total</dt>
-                <dd>{ms ? `${angka1(ms.total / 1000)} triliun Rp` : "\u2013"}</dd>
+                <dd>{ms ? `Rp${angka1(ms.total / 1000)} triliun` : "\u2013"}</dd>
                 <small>
                   {ms
                     ? `peringkat ${RANK_TOTAL.get(ms.id)} dari ${ch6.daerah.length}; ${angka1((ms.total / ch6.nasional.pdrbTotal) * 100)}% PDRB nasional`
@@ -106,12 +106,12 @@ export default function CekDaerah() {
                 <dd>
                   ke-{rankProv} dari {dalamProv.length}
                 </dd>
-                <small>{prov ? `rata-rata provinsi ${jt(prov.nilai)} juta Rp` : ""}</small>
+                <small>{prov ? `rata-rata provinsi Rp${jt(prov.nilai)} juta` : ""}</small>
               </div>
               <div>
                 <dt>Klaster LISA</dt>
                 <dd>
-                  <span className={styles.dot} style={{ background: WARNA_LISA[pk.lisa] }} />
+                  <span className={styles.dot} style={{ backgroundColor: WARNA_LISA[pk.lisa] }} />
                   {LABEL_LISA[pk.lisa].singkat}
                 </dd>
                 <small>{LABEL_LISA[pk.lisa].arti.replace(/^Tidak/, "tidak")}</small>
@@ -125,15 +125,15 @@ export default function CekDaerah() {
                   <span
                     key={d.id}
                     className={styles.stripTick}
-                    style={{ left: `${xStrip(d.nilai)}%`, background: PALET_PDRB[kelasDari(d.nilai, ch5.kelas.kuantil)] }}
+                    style={{ left: pctCss(xStrip(d.nilai)), backgroundColor: PALET_PDRB[kelasDari(d.nilai, ch5.kelas.kuantil)] }}
                   />
                 ))}
-                <span className={styles.stripNational} style={{ left: `${xStrip(nasional)}%` }}>
+                <span className={styles.stripNational} style={{ left: pctCss(xStrip(nasional)) }}>
                   <em>nasional</em>
                 </span>
                 <span
                   className={styles.stripMark}
-                  style={{ left: `${xStrip(pk.nilai)}%` }}
+                  style={{ left: pctCss(xStrip(pk.nilai)) }}
                   data-ujung={xStrip(pk.nilai) > 85 ? "kanan" : xStrip(pk.nilai) < 15 ? "kiri" : undefined}
                 >
                   <em>{terpilih.nama.replace(/^Kab\.\s/, "")}</em>
@@ -141,7 +141,7 @@ export default function CekDaerah() {
               </div>
               <div className={styles.stripAxis}>
                 {[10, 50, 100, 500, 1000].map((t) => (
-                  <span key={t} style={{ left: `${xStrip(t * 1000)}%` }}>
+                  <span key={t} style={{ left: pctCss(xStrip(t * 1000)) }}>
                     {t}
                   </span>
                 ))}
