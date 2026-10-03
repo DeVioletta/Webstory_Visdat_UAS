@@ -126,13 +126,21 @@ mapshaper = ROOT / "node_modules" / ".bin" / "mapshaper"
 subprocess.run(
     [
         str(mapshaper), "-i", str(tmp_geo), "name=kabkota",
+        # keep-shapes: kota kecil (mis. Kota Kediri, Kota Magelang) tidak boleh hilang saat disederhanakan.
+        # Jangan tambahkan -filter-slivers: opsi itu menghapus poligon kota kecil seluruhnya.
         "-simplify", "weighted", "2%", "keep-shapes",
-        "-filter-slivers",
         "-o", "format=topojson", "quantization=1e5", str(out_topo),
     ],
     check=True,
 )
 print(f"Batas web: {out_topo.relative_to(ROOT)} ({out_topo.stat().st_size / 1e6:.2f} MB)")
+
+# Pastikan tidak ada daerah yang hilang geometrinya setelah penyederhanaan
+topo = json.loads(out_topo.read_text(encoding="utf-8"))
+kosong = [g["properties"]["id"] for g in topo["objects"]["kabkota"]["geometries"] if not g.get("type")]
+if kosong:
+    print("GAGAL: daerah kehilangan geometri setelah disederhanakan:", kosong)
+    sys.exit(1)
 
 # ---------- 6. Simpan ----------
 daerah = []

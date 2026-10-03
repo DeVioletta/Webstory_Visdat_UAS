@@ -357,7 +357,8 @@ export default function PdrbMap({ state, onChange, ringkas = false, judul }: Pro
           <g>
             {sorot.length <= 12
               ? jalur
-                  .filter((j) => tersorot.has(j.id))
+                  // Lewati daerah tanpa titik tengah yang valid supaya tidak muncul NaN
+                  .filter((j) => tersorot.has(j.id) && Number.isFinite(j.c[0]) && Number.isFinite(j.c[1]))
                   .map((j) => {
                     const d = DAERAH.get(j.id);
                     const x = zoom.tx + zoom.k * j.c[0];
