@@ -441,7 +441,7 @@ export default function FlowMap({ state, onChange }: Props) {
       <Caption
         judul={`${chapter2Copy.petaJudul}, ${tahun}`}
         satuan="miliar USD; tebal garis sebanding dengan nilai"
-        catatan={`${CATATAN_NILAI} Titik negara besar diletakkan di sekitar pusat ekonominya. Peta dasar: Natural Earth.`}
+        catatan={`${CATATAN_NILAI} Peta dasar: Natural Earth (topojson/world-atlas).`}
       />
     </figure>
   );

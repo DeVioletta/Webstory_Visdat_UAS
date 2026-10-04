@@ -4,14 +4,16 @@
     "2024": {
       "ekspor": 266529.176,
       "impor": 235199.603,
-      "jumlahMitraEkspor": 231,
-      "jumlahMitraImpor": 233
+      "jumlahMitraEkspor": 232,
+      "jumlahMitraImpor": 243,
+      "jumlahMitraDagang": 246
     },
     "2025": {
       "ekspor": 282505.283,
       "impor": 241362.615,
-      "jumlahMitraEkspor": 231,
-      "jumlahMitraImpor": 229
+      "jumlahMitraEkspor": 233,
+      "jumlahMitraImpor": 241,
+      "jumlahMitraDagang": 246
     }
   },
   "mitra": [

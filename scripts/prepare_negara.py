@@ -96,8 +96,11 @@ totals = {
     y: {
         "ekspor": round(tot_e[y] / 1e6, 3),
         "impor": round(tot_i[y] / 1e6, 3),
-        "jumlahMitraEkspor": int(sum(1 for d in mitra if d[f"ekspor{y}"] > 0)),
-        "jumlahMitraImpor": int(sum(1 for d in mitra if d[f"impor{y}"] > 0)),
+        # Dihitung dari nilai USD asli, sebelum dibulatkan ke juta USD. Pembulatan 3 desimal
+        # membuat mitra bernilai di bawah 500 USD terbaca nol dan tidak terhitung.
+        "jumlahMitraEkspor": int((m[f"fob_{y}_e"] > 0).sum()),
+        "jumlahMitraImpor": int((m[f"fob_{y}_i"] > 0).sum()),
+        "jumlahMitraDagang": int(((m[f"fob_{y}_e"] > 0) | (m[f"fob_{y}_i"] > 0)).sum()),
     }
     for y in TAHUN
 }

@@ -1,9 +1,3 @@
-/**
- * Semua teks Bab 2. Angka dihitung dari data/processed/chapter2.json
- * (python3 scripts/prepare_negara.py).
- *
- * Teks ini masih draf berbasis data. Silakan ganti gaya bahasanya.
- */
 import data from "@/data/processed/chapter2.json";
 import { angka1, miliar, persenBulat, pertumbuhan } from "@/lib/format";
 
@@ -42,6 +36,9 @@ const cari = (iso: string) => {
   return m;
 };
 const t25 = data.totals["2025"];
+// Jumlah mitra pada 2025: jumlahMitraDagang = ada ekspor ATAU impor; dua lainnya hanya satu arah.
+// Ketiganya dihitung di prepare_negara.py dari nilai USD asli, bukan dari nilai yang sudah dibulatkan.
+const jumlahMitraDagang = t25.jumlahMitraDagang;
 const chn = cari("CHN");
 const neraca = (m: Mitra, y: Tahun2) => (y === "2024" ? m.ekspor2024 - m.impor2024 : m.ekspor2025 - m.impor2025);
 
@@ -55,7 +52,7 @@ const dasar: FlowState = { tahun: "2025", arah: "ekspor", kawasan: "Semua", juml
 export const chapter2Copy = {
   nomor: "Bab 2",
   judul: "Satu mitra, dua arah yang timpang",
-  pengantar: `Indonesia berdagang dengan ${t25.jumlahMitraEkspor} negara dan wilayah. Tapi aliran barangnya jauh dari merata: segelintir mitra menyerap sebagian besar ekspor, dan satu mitra mendominasi impor.`,
+  pengantar: `Pada 2025 Indonesia berdagang dengan ${jumlahMitraDagang} negara dan wilayah (ekspor ke ${t25.jumlahMitraEkspor}, impor dari ${t25.jumlahMitraImpor}). Tapi aliran barangnya jauh dari merata: segelintir mitra menyerap sebagian besar ekspor, dan satu mitra mendominasi impor.`,
 
   petaJudul: "Aliran perdagangan Indonesia dengan mitra dagang utama",
   neracaJudul: "Neraca perdagangan dengan 15 mitra terbesar",
