@@ -2,7 +2,8 @@
 
 *Webstory* interaktif tentang aliran energi, struktur perdagangan, dan ketimpangan ekonomi antarwilayah Indonesia, dibangun sepenuhnya dari data Badan Pusat Statistik (BPS).
 
-**Tautan proyek:** https://amrestya-uas-visdat.vercel.app
+**Tautan proyek:** https://amrestya-uas-visdat.vercel.app 
+
 **Repositori:** https://github.com/DeVioletta/Webstory_Visdat_UAS
 
 ---
