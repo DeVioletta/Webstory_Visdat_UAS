@@ -1,9 +1,3 @@
-/**
- * Semua teks Bab 6. Angka dihitung dari data/processed/chapter6.json
- * (python3 scripts/prepare_massa.py) dan chapter5.json (kelas warna).
- *
- * Teks ini masih draf berbasis data. Silakan ganti gaya bahasanya.
- */
 import data from "@/data/processed/chapter6.json";
 import ch5 from "@/data/processed/chapter5.json";
 import { angka1 } from "@/lib/format";

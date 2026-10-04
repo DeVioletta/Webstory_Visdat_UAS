@@ -7,8 +7,8 @@ interface CaptionProps {
 }
 
 /**
- * Wajib dipasang di bawah SETIAP visualisasi.
- * Memenuhi syarat tugas: judul, satuan, dan "Sumber: BPS" selalu tampil.
+ *
+ * Memenuhi syarat tugas: judul, satuan, dan "Sumber: BPS"
  */
 export default function Caption({ judul, satuan, catatan }: CaptionProps) {
   return (

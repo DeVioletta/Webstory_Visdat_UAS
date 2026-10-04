@@ -28,7 +28,7 @@ export const KAWASAN: string[] = [
 ];
 
 /** Keterangan satuan impor. Ganti jika tabel BPS impor ternyata bernilai CIF. */
-export const CATATAN_NILAI = "Nilai ekspor FOB. Nilai impor mengikuti tabel BPS yang dipakai.";
+export const CATATAN_NILAI = "Nilai ekspor dan impor menggunakan nilai free on board (FOB).";
 
 const cari = (iso: string) => {
   const m = data.mitra.find((d) => d.iso3 === iso);
@@ -36,8 +36,6 @@ const cari = (iso: string) => {
   return m;
 };
 const t25 = data.totals["2025"];
-// Jumlah mitra pada 2025: jumlahMitraDagang = ada ekspor ATAU impor; dua lainnya hanya satu arah.
-// Ketiganya dihitung di prepare_negara.py dari nilai USD asli, bukan dari nilai yang sudah dibulatkan.
 const jumlahMitraDagang = t25.jumlahMitraDagang;
 const chn = cari("CHN");
 const neraca = (m: Mitra, y: Tahun2) => (y === "2024" ? m.ekspor2024 - m.impor2024 : m.ekspor2025 - m.impor2025);

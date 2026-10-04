@@ -418,8 +418,8 @@ export default function PdrbMap({ state, onChange, ringkas = false, judul }: Pro
             satuan={lapisan === "pdrb" ? "juta rupiah per penduduk per tahun, atas dasar harga berlaku" : "kategori klaster (\u03b1 = 0,05)"}
             catatan={
               lapisan === "pdrb"
-                ? `Klasifikasi ${metode === "kuantil" ? "kuantil, 5 kelas dengan jumlah daerah yang sama" : "natural breaks (Fisher-Jenks), 5 kelas"}. Palet sequential YlGnBu, aman untuk buta warna. PDRB per kapita adalah rasio, sehingga layak dipetakan sebagai choropleth. Batas wilayah: GeoJSON kab/kota (kode Kemendagri), dicocokkan dengan kode BPS melalui nama daerah.`
-                : `LISA dihitung dari logaritma PDRB per kapita, bobot queen contiguity dengan standarisasi baris, ${chapter5Data.moran.permutasi} permutasi. ${chapter5Data.moran.jumlahPulau} daerah kepulauan tanpa tetangga darat diberi satu tetangga terdekat. Batas wilayah: GeoJSON kab/kota (kode Kemendagri).`
+                ? `Klasifikasi ${metode === "kuantil" ? "kuantil, 5 kelas dengan jumlah daerah yang sama" : "natural breaks (Fisher-Jenks), 5 kelas"}. Palet sequential YlGnBu yang aman untuk buta warna. PDRB per kapita adalah rasio sehingga layak dipetakan sebagai choropleth. Batas wilayah: GeoJSON kab/kota dari LapakGIS (diolah)`
+                : `LISA dihitung dari logaritma PDRB per kapita, bobot queen contiguity dengan standarisasi baris, ${chapter5Data.moran.permutasi} permutasi. ${chapter5Data.moran.jumlahPulau} daerah kepulauan tanpa tetangga darat diberi satu tetangga terdekat. Batas wilayah: GeoJSON kab/kota dari LapakGIS (diolah).`
             }
           />
         </>

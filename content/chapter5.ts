@@ -1,11 +1,3 @@
-/**
- * Semua teks Bab 5. Angka dihitung dari data/processed/chapter5.json
- * (python3 scripts/prepare_pdrb.py).
- *
- * Teks ini masih draf berbasis data. Konteks seperti "daerah tambang" atau
- * "kawasan industri nikel" sengaja tidak ditulis karena tidak berasal dari data ini.
- * Jika ingin menambahkannya, sertakan rujukannya.
- */
 import data from "@/data/processed/chapter5.json";
 import { angka1 } from "@/lib/format";
 

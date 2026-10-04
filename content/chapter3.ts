@@ -1,9 +1,3 @@
-/**
- * Semua teks Bab 3. Angka dihitung dari data/processed/chapter3.json
- * (python3 scripts/prepare_treemap.py).
- *
- * Teks ini masih draf berbasis data. Silakan ganti gaya bahasanya.
- */
 import data from "@/data/processed/chapter3.json";
 import { angka1, formatIsp, isp, miliar, pertumbuhan } from "@/lib/format";
 

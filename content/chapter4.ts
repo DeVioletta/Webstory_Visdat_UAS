@@ -1,9 +1,3 @@
-/**
- * Semua teks Bab 4. Memakai hirarki yang sama dengan Bab 3
- * (data/processed/chapter3.json, dari python3 scripts/prepare_treemap.py).
- *
- * Teks ini masih draf berbasis data. Silakan ganti gaya bahasanya.
- */
 import { cariJalur, TREE, type SitcNode } from "@/content/chapter3";
 import { angka1, miliar, pertumbuhan } from "@/lib/format";
 

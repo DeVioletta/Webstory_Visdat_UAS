@@ -279,7 +279,7 @@ export default function MassaMap({ state, onChange }: Props) {
         }
         catatan={`${
           simbol
-            ? "Luas lingkaran sebanding dengan PDRB total (jari-jari memakai akar kuadrat), sehingga lingkaran dua kali lebih luas berarti nilai dua kali lebih besar. PDRB total adalah angka absolut, karena itu digambar sebagai simbol, bukan diwarnai seperti choropleth. "
+            ? "Luas lingkaran sebanding dengan PDRB total sehingga lingkaran dua kali lebih luas berarti nilai dua kali lebih besar. PDRB total adalah angka absolut sehingga digambar sebagai simbol choropleth. "
             : ""
         }${
           dasar !== "polos"

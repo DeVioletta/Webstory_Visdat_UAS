@@ -152,7 +152,7 @@ export default function MoranScatter() {
       <Caption
         judul="Diagram sebar Moran dan klaster LISA PDRB per kapita kabupaten/kota, 2025"
         satuan="nilai baku dari logaritma PDRB per kapita (kedua sumbu)"
-        catatan={`${chapter5Data.moran.bobot}. Signifikansi dari ${chapter5Data.moran.permutasi} permutasi acak, α = 0,05. Batas wilayah: GeoJSON kab/kota (kode Kemendagri).`}
+        catatan={`${chapter5Data.moran.bobot}. Signifikansi dari ${chapter5Data.moran.permutasi} permutasi acak, α = 0,05. Batas wilayah: GeoJSON kab/kota dari LapakGIS (diolah).`}
       />
     </figure>
   );

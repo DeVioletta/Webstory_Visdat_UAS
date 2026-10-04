@@ -1,9 +1,3 @@
-/**
- * Bab 7 (Penutup). Tidak ada data baru: semua angka diambil dari hasil olahan bab sebelumnya,
- * supaya kesimpulan selalu sama dengan yang ditunjukkan grafik.
- *
- * Teks ini masih draf berbasis data. Silakan ganti gaya bahasanya.
- */
 import ch1 from "@/data/processed/chapter1.json";
 import ch2 from "@/data/processed/chapter2.json";
 import ch3 from "@/data/processed/chapter3.json";
@@ -113,11 +107,6 @@ export const chapter7Copy = {
   cekTeks: "Pilih satu kabupaten atau kota untuk melihat posisinya dalam semua ukuran yang dipakai di webstory ini.",
 };
 
-/**
- * Identitas pembuat, tampil di bagian paling bawah penutup.
- * GANTI isian dalam kurung siku dengan data yang sebenarnya.
- * Untuk kelompok, tambahkan beberapa objek di dalam daftar `nama`.
- */
 export const PENULIS = {
   judul: "Disusun oleh",
   nama: [{ nama: "Amrestya Gaia Bujjhati Isbandi", keterangan: "222312969" }],
