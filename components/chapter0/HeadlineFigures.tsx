@@ -63,7 +63,7 @@ export default function HeadlineFigures() {
       <Caption
         judul={chapter0Copy.figurJudul}
         satuan="miliar US$"
-        catatan="Panjang batang memakai skala yang sama untuk ketiga indikator."
+        catatan="Panjang batang memakai skala yang sama untuk ketiga indikator. Total mencakup emas moneter, yang dikeluarkan pada Bab 3 dan 4 karena bukan barang dagangan (lihat catatan di awal Bab 3)."
       />
     </figure>
   );

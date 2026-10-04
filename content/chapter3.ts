@@ -65,7 +65,7 @@ const d78 = node("78");
 export const chapter3Copy = {
   nomor: "Bab 3",
   judul: "Yang dijual mentah, yang dibeli jadi",
-  pengantar: `Total perdagangan barang Indonesia pada 2025 mencapai ${miliar(
+  pengantar: `Total perdagangan barang Indonesia pada 2025, di luar emas moneter, mencapai ${miliar(
     tot(TREE, "2025")
   )} miliar USD, dari ${data.tree.children.reduce(
     (a, s) => a + s.children.reduce((b, d) => b + d.children.length, 0),
@@ -75,13 +75,14 @@ export const chapter3Copy = {
   treemapJudul: "Struktur perdagangan Indonesia menurut kelompok komoditas SITC",
 
   // Penjelasan cara membaca, tampil di atas treemap
-  bacaAngka: "Angka di dalam kotak adalah nilai perdagangan dalam miliar USD, yaitu ekspor ditambah impor.",
+  bacaAngka:
+    "Angka di dalam kotak adalah nilai perdagangan dalam miliar USD, yaitu ekspor ditambah impor. Totalnya tidak mencakup emas moneter, sehingga sedikit lebih kecil dari Bab 0 (lihat catatan di atas).",
   bacaWarna:
     "Warna adalah indeks spesialisasi perdagangan: (ekspor \u2212 impor) / (ekspor + impor). Nilainya +1 jika hanya ada ekspor, \u22121 jika hanya ada impor, dan 0 jika keduanya sama besar.",
 
-  // Alasan emas moneter dikeluarkan, tampil di bawah treemap
+  // Ringkasan di keterangan bawah treemap. Penjelasan lengkapnya ada di components/ui/CatatanEmas.tsx (awal bab)
   catatanEmas:
-    "Emas moneter tidak dimasukkan. Emas jenis ini dipegang otoritas moneter sebagai cadangan devisa, sehingga diperlakukan sebagai aset keuangan, bukan barang dagangan, dan tidak termasuk dalam kelompok komoditas SITC mana pun. Nilainya tetap terhitung dalam total ekspor dan impor di Bab 0. Emas nonmoneter, yaitu emas batangan dan setengah jadi yang diperdagangkan sebagai barang, tetap masuk di Division 97.",
+    "Emas moneter tidak dimasukkan (penjelasan di awal bab ini); emas non-moneter (SITC 971, Division 97) tetap termasuk.",
 
   steps: [
     {

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import story from "@/components/ui/story.module.css";
+import CatatanEmas from "@/components/ui/CatatanEmas";
 import { useActiveStep } from "@/components/ui/useActiveStep";
 import { chapter4Copy, type SunburstState } from "@/content/chapter4";
 import Sunburst from "./Sunburst";
@@ -23,6 +24,7 @@ export default function Chapter4() {
           {chapter4Copy.judul}
         </h2>
         <p className={story.lede}>{chapter4Copy.pengantar}</p>
+        {/* <CatatanEmas id="catatan-emas-bab4" babLain="Bab 3" /> */}
       </header>
 
       <div

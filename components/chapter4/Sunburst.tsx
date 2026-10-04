@@ -265,7 +265,7 @@ export default function Sunburst({ state, onChange }: Props) {
       <Caption
         judul={`${chapter4Copy.sunburstJudul}, arus ${LABEL_ARUS[arus]}`}
         satuan={"miliar USD (lebar irisan, nilai 2025); persen perubahan dari 2024 (warna)"}
-        catatan="Perubahan di tiap tingkat dihitung dari nilai yang dijumlahkan, bukan rata-rata perubahan di bawahnya. Emas moneter tidak dimasukkan (alasannya di Bab 3). Klik irisan untuk masuk, klik lingkaran tengah untuk keluar."
+        catatan="Perubahan di tiap tingkat dihitung dari nilai yang dijumlahkan, bukan rata-rata perubahan di bawahnya. Emas moneter tidak dimasukkan, emas non-moneter (SITC 971) tetap termasuk (penjelasan di awal bab 3). Klik irisan untuk masuk, klik lingkaran tengah untuk keluar."
       />
     </figure>
   );

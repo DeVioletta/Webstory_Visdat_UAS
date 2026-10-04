@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import story from "@/components/ui/story.module.css";
+import CatatanEmas from "@/components/ui/CatatanEmas";
 import { useActiveStep } from "@/components/ui/useActiveStep";
 import { chapter3Copy, type TreemapState } from "@/content/chapter3";
 import SurplusDefisit from "./SurplusDefisit";
@@ -24,6 +25,7 @@ export default function Chapter3() {
           {chapter3Copy.judul}
         </h2>
         <p className={story.lede}>{chapter3Copy.pengantar}</p>
+        <CatatanEmas id="catatan-emas-bab3" babLain="Bab 4" />
       </header>
 
       <div

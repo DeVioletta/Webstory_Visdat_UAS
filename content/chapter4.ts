@@ -50,13 +50,13 @@ const selisih = (id: string, a: Arus) => nilaiArus(node(id), a, "2025") - nilaiA
 export const chapter4Copy = {
   nomor: "Bab 4",
   judul: "Yang tumbuh, yang menyusut",
-  pengantar: `Ekspor naik ${angka1(g("root", "ekspor"))} persen dan impor naik ${angka1(
+  pengantar: `Di luar emas moneter, ekspor naik ${angka1(g("root", "ekspor"))} persen dan impor naik ${angka1(
     g("root", "impor")
   )} persen dari 2024 ke 2025. Angka itu rata-rata dari ratusan kelompok komoditas yang bergerak ke arah berbeda. Diagram di bawah memecahnya kembali.`,
 
   sunburstJudul: "Perubahan perdagangan Indonesia menurut kelompok komoditas SITC, 2024 ke 2025",
   bacaIrisan: (arus: Arus) =>
-    `Lebar irisan sebanding dengan nilai ${LABEL_ARUS[arus]} tahun 2025, dalam miliar USD. Cincin dalam adalah Section, cincin tengah Division, cincin luar kelompok 3 digit.`,
+    `Lebar irisan sebanding dengan nilai ${LABEL_ARUS[arus]} tahun 2025, dalam miliar USD. Cincin dalam adalah Section, cincin tengah Division, cincin luar kelompok 3 digit. Total tidak mencakup emas moneter, sehingga sedikit berbeda dari Bab 0 (lihat catatan di atas).`,
   bacaWarna:
     "Warna menunjukkan perubahan nilai dari 2024 ke 2025: (nilai 2025 \u2212 nilai 2024) / nilai 2024 \u00d7 100%. Cokelat berarti turun, hijau kebiruan berarti naik.",
 
