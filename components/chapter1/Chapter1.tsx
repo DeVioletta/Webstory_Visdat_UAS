@@ -27,7 +27,7 @@ export default function Chapter1() {
         <p className={story.note}>{chapter1Copy.catatanTahun}</p>
       </header>
 
-      {/* Sankey butuh ruang lebar: kolom teks dipersempit lewat variabel CSS */}
+
       <div
         className={story.scrolly}
         style={{ "--steps-fr": "0.5fr", "--chart-fr": "1.5fr" } as React.CSSProperties}

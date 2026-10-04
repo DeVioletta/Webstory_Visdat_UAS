@@ -1,10 +1,3 @@
-/**
- * Semua teks Bab 1. Angka dihitung dari data:
- *   - data/processed/chapter1.json  (python3 scripts/prepare_energi.py)
- *   - public/data/sitc_clean.json   (python3 scripts/prepare_sitc.py), untuk jembatan ke nilai perdagangan
- *
- * Teks ini masih draf berbasis data. Silakan ganti gaya bahasanya.
- */
 import data from "@/data/processed/chapter1.json";
 import sitc from "@/public/data/sitc_clean.json";
 import { angka1, jutaTJ, miliar, persenBulat, pertumbuhan } from "@/lib/format";
@@ -44,7 +37,7 @@ const bb = data.batubara;
 const bb20 = bb[0];
 const bb24 = bb[bb.length - 1];
 
-// Jembatan ke data perdagangan (SITC 2024, juta USD)
+// penghubung data perdagangan (SITC 2024, juta USD)
 const nilai = (kode: string, kolom: "ekspor_2024" | "impor_2024") =>
   sitc.find((r) => r.kode_3 === kode)?.[kolom] ?? 0;
 const imporMinyakUSD = nilai("333", "impor_2024") + nilai("334", "impor_2024");
@@ -55,7 +48,7 @@ export const chapter1Copy = {
   judul: "Energi yang keluar, energi yang masuk",
   pengantar: `Batu bara masih menjadi komoditas ekspor terbesar kedua. Untuk melihat perannya, kita perlu mengikuti energinya dari tambang dan sumur sampai ke pemakai, dalam satuan energi, bukan dolar.`,
   catatanTahun:
-    "Bab ini memakai Neraca Energi 2024, edisi terbaru yang tersedia. Neraca 2025 baru terbit akhir tahun. Angka 2024 merupakan angka sementara.",
+    "Bab ini memakai Neraca Energi 2024, edisi terbaru yang tersedia.",
 
   sankeyJudul: "Aliran energi Indonesia dari pasokan ke pemakaian, 2024",
 

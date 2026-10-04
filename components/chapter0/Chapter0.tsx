@@ -11,8 +11,6 @@ export default function Chapter0() {
   const steps = chapter0Copy.steps;
   const { aktif, setRef } = useActiveStep(steps.length);
 
-  // Pilihan manual pembaca (tombol tahun/ukuran). Direset setiap pindah langkah,
-  // supaya cerita kembali ke keadaan yang dirancang untuk langkah itu.
   const [manual, setManual] = useState<Partial<ChartState>>({});
   useEffect(() => setManual({}), [aktif]);
 

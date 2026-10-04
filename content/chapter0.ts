@@ -1,10 +1,3 @@
-/**
- * Semua teks Bab 0 ada di file ini, terpisah dari kode tampilan.
- * Angka di dalam teks dihitung dari data, jadi kalau data diperbarui
- * (python3 scripts/prepare_sitc.py), teksnya ikut berubah.
- *
- * Teks ini masih draf berbasis data. Silakan ganti gaya bahasanya.
- */
 import data from "@/data/processed/chapter0.json";
 import { angka1, miliar, pertumbuhan } from "@/lib/format";
 

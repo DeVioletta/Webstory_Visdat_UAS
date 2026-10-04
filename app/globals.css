@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap");
 
-/*
- * Token warna. Palet data mengikuti Okabe-Ito (aman untuk buta warna).
- * Konvensi di seluruh webstory:
- *   ekspor = biru, impor = oranye (dipakai lagi untuk palet diverging ISP di Bab 3)
- */
 :root {
   --paper: #eef1f4;
   --paper-deep: #e2e7ed;
@@ -81,7 +76,6 @@ button {
   }
 }
 
-/* Warna keluarga energi (Bab 1). Tetap dari palet Okabe-Ito. */
 :root {
   --e-batubara: #14213d;
   --e-minyak: #cc79a7;
@@ -90,6 +84,5 @@ button {
   --e-biomassa: #009e73;
   --e-lainnya: #9aa5b1;
   --node-netral: #5a6579;
-  /* pemakaian dalam negeri (grafik garis Bab 1), sengaja beda dari biru ekspor & oranye impor */
   --domestik: #7a5195;
 }

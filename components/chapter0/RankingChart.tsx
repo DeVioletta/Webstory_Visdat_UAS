@@ -29,7 +29,7 @@ export default function RankingChart({ state, onTahun, onMode }: Props) {
   const [aktifKode, setAktifKode] = useState<string | null>(null);
   const rows = chapter0Data.ranking;
 
-  // Skala tetap untuk kedua tahun, supaya perubahan panjang batang mencerminkan perubahan nilai
+  // Skala tetap untuk kedua tahun
   const maks =
     mode === "nilai"
       ? Math.max(...rows.flatMap((r) => [r.ekspor2024, r.ekspor2025]))

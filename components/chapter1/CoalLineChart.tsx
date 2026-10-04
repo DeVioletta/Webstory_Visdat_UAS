@@ -8,7 +8,6 @@ import styles from "./chapter1.module.css";
 
 type Kunci = "produksi" | "ekspor" | "pemakaianDalamNegeri";
 
-/** Warna + pola garis + bentuk penanda: makna tidak bergantung pada warna saja */
 const SERI: { kunci: Kunci; label: string; pendek: string; warna: string; dash?: string; penanda: "lingkaran" | "kotak" | "segitiga" }[] = [
   { kunci: "produksi", label: "Produksi", pendek: "Produksi", warna: "var(--e-batubara)", penanda: "lingkaran" },
   { kunci: "ekspor", label: "Ekspor", pendek: "Ekspor", warna: "var(--ekspor)", penanda: "kotak" },

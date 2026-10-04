@@ -14,7 +14,7 @@ const ITEMS: { kunci: Kunci; label: string; warna: string }[] = [
 export default function HeadlineFigures() {
   const t24 = chapter0Data.totals["2024"];
   const t25 = chapter0Data.totals["2025"];
-  // Satu skala untuk semua batang supaya ekspor, impor, dan neraca bisa dibandingkan langsung
+  // Satu skala untuk semua batang 
   const maks = Math.max(t24.ekspor, t25.ekspor, t24.impor, t25.impor);
 
   return (

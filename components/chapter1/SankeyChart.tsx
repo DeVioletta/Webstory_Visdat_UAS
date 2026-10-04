@@ -63,7 +63,6 @@ export default function SankeyChart({ fokus, onFokus }: Props) {
 
   const tinggi = ponsel ? 420 : 520;
 
-  // d3-sankey memodifikasi objek, jadi selalu bekerja pada salinan
   const graf = useMemo(() => {
     const gen = sankey<NodeData, LinkData>()
       .nodeId((d) => d.id)
@@ -287,7 +286,7 @@ export default function SankeyChart({ fokus, onFokus }: Props) {
       <Caption
         judul={chapter1Copy.sankeyJudul}
         satuan="terajoule (TJ); ketebalan pita sebanding dengan jumlah energi"
-        catatan="Angka 2024 merupakan angka sementara. Biodiesel yang dicampurkan ke solar ditampilkan sebagai aliran pencampuran biodiesel. Keluaran kilang gas tercatat lebih besar dari masukannya, selisihnya ditampilkan apa adanya."
+        catatan="Angka 2024 merupakan angka sementara"
       />
     </figure>
   );
