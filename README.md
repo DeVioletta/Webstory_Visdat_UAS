@@ -55,14 +55,14 @@ Semua angka yang divisualisasikan berasal dari BPS. Data di luar BPS hanya dipak
 
 | Data | Sumber | Dipakai di |
 |---|---|---|
-| Ekspor dan impor menurut kode SITC, 2024–2025 | BPS, [*Statistik Perdagangan Luar Negeri Indonesia Menurut Kode SITC, 2024 dan 2025*](https://www.bps.go.id/id/publication/2026/08/31/e15722f0d16e51d9c64536a2/statistik-perdagangan-luar-negeri-indonesia-menurut-kode-sitc-2004-dan-2025.html) | Bab 0, 3, 4 |
-| Ekspor dan impor menurut negara, 2024–2025 | [*Statistik Perdagangan Luar Negeri Indonesia Menurut Kode SITC, 2024 dan 2025*](https://www.bps.go.id/id/publication/2026/08/31/e15722f0d16e51d9c64536a2/statistik-perdagangan-luar-negeri-indonesia-menurut-kode-sitc-2004-dan-2025.html) | Bab 2 |
-| Neraca energi 2024 dan 2020–2024 | BPS, [*Neraca Energi Indonesia 2020–2024*](https://www.bps.go.id/id/publication/2025/12/31/08fbe1e409d6fe8a83688144/energy-balances-of-indonesia-2020-2024.html) | Bab 1 |
-| PDRB dan PDRB per kapita kabupaten/kota, 2025 | BPS, [*PDRB Kabupaten/Kota di Indonesia 2021–2025*](https://www.bps.go.id/id/publication/2026/06/10/234d5061d35a199c70e77766/produk-domestik-regional-bruto-kabupaten-kota-di-indonesia-2021-2025.html) | Bab 5, 6, 7 |
-| PDRB per kapita provinsi, 2025 | BPS, [*PDRB Provinsi-Provinsi di Indonesia Menurut Lapangan Usaha 2021–2025*](https://www.bps.go.id/id/publication/2026/04/13/71d97fa95c70c5049deecbab/produk-domestik-regional-bruto-provinsi-provinsi-di-indonesia-menurut-lapangan-usaha-2021-2025.html) | Bab 6 |
-| Batas 514 kabupaten/kota | [Lapak GIS](https://www.lapakgis.com/2022/01/shp-batas-kabupaten-kota-indonesia.html) (2022) | Bab 5, 6, 7 |
-| Batas negara | Natural Earth 4.1.0 melalui [world-atlas](https://github.com/topojson/world-atlas) | Bab 2 |
-| Kode ISO dan koordinat negara | [mledoze/countries](https://github.com/mledoze/countries) melalui paket world-countries | Bab 2 |
+| Ekspor dan impor menurut kode SITC, 2024–2025 | BPS, [*Statistik Perdagangan Luar Negeri Indonesia Menurut Kode SITC, 2024 dan 2025*](https://www.bps.go.id/id/publication/2026/08/31/e15722f0d16e51d9c64536a2/statistik-perdagangan-luar-negeri-indonesia-menurut-kode-sitc-2004-dan-2025.html), diakses 26/09/2026 | Bab 0, 3, 4 |
+| Ekspor dan impor menurut negara, 2024–2025 | BPS, [*Statistik Perdagangan Luar Negeri Indonesia Menurut Kode SITC, 2024 dan 2025*](https://www.bps.go.id/id/publication/2026/08/31/e15722f0d16e51d9c64536a2/statistik-perdagangan-luar-negeri-indonesia-menurut-kode-sitc-2004-dan-2025.html), diakses 26/09/2026 | Bab 2 |
+| Neraca energi 2024 dan 2020–2024 | BPS, [*Neraca Energi Indonesia 2020–2024*](https://www.bps.go.id/id/publication/2025/12/31/08fbe1e409d6fe8a83688144/energy-balances-of-indonesia-2020-2024.html), diakses 26/09/2026 | Bab 1 |
+| PDRB dan PDRB per kapita kabupaten/kota, 2025 | BPS, [*PDRB Kabupaten/Kota di Indonesia 2021–2025*](https://www.bps.go.id/id/publication/2026/06/10/234d5061d35a199c70e77766/produk-domestik-regional-bruto-kabupaten-kota-di-indonesia-2021-2025.html), diakses 26/09/2026 | Bab 5, 6, 7 |
+| PDRB per kapita provinsi, 2025 | BPS, [*PDRB Provinsi-Provinsi di Indonesia Menurut Lapangan Usaha 2021–2025*](https://www.bps.go.id/id/publication/2026/04/13/71d97fa95c70c5049deecbab/produk-domestik-regional-bruto-provinsi-provinsi-di-indonesia-menurut-lapangan-usaha-2021-2025.html), diakses 26/09/2026 | Bab 6 |
+| Batas 514 kabupaten/kota | [Lapak GIS](https://www.lapakgis.com/2022/01/shp-batas-kabupaten-kota-indonesia.html), diakses 26/09/2026 | Bab 5, 6, 7 |
+| Batas negara | Natural Earth 4.1.0 melalui [*world-atlas*](https://github.com/topojson/world-atlas), diakses 01/10/2026 | Bab 2 |
+| Kode ISO dan koordinat negara | [*mledoze/countries*](https://github.com/mledoze/countries) melalui paket *world-countries*, diakses 01/10/2026 | Bab 2 |
 
 ### Catatan data
 
