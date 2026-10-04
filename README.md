@@ -181,10 +181,13 @@ Seluruh teks cerita ada di folder `content/`. Angka di dalam teks dihitung langs
 - Pola yang ditampilkan tidak ditafsirkan secara kausal.
 
 ## Penulis
-
-**Amrestya Gaia Bujjhati Isbandi** (222312969)
-[Program studi, universitas]
-Mata kuliah: [Nama mata kuliah], 2026
+**Amrestya Gaia Bujjhati Isbandi**  
+NIM: 222312969  
+Kelas: 3SD1  
+Program Studi: Komputasi Statistik  
+Politeknik Statistika STIS  
+Mata Kuliah: Visualisasi Data  
+Tahun: 2026
 
 ## Penggunaan alat bantu AI
 
