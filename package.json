@@ -9,6 +9,7 @@
     "data": "python3 scripts/prepare_sitc.py && python3 scripts/prepare_energi.py && python3 scripts/prepare_negara.py && python3 scripts/prepare_treemap.py && python3 scripts/prepare_pdrb.py && python3 scripts/prepare_massa.py"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "d3-geo": "^3.1.1",
     "d3-hierarchy": "^3.1.2",
     "d3-sankey": "^0.12.3",
