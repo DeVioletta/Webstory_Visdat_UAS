@@ -6,6 +6,7 @@ import { chapter7Copy, PENULIS } from "@/content/chapter7";
 import CekDaerah from "./CekDaerah";
 import Metodologi from "./Metodologi";
 import styles from "./chapter7.module.css";
+import KeteranganTugas from "./KeteranganTugas";   
 
 export default function Chapter7() {
   const [tersalin, setTersalin] = useState(false);
@@ -118,6 +119,8 @@ export default function Chapter7() {
         </p>
         <p className={styles.authorMeta}>Sumber data utama: Badan Pusat Statistik (BPS).</p>
       </footer>
+
+      <KeteranganTugas /> 
     </section>
   );
 }

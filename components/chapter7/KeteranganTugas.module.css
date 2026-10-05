@@ -1,0 +1,35 @@
+/* Keterangan tugas di paling bawah bab Penutup. Memakai token warna dari app/globals.css */
+
+.tugas {
+  max-width: 40rem;
+  margin: 28px auto 0;
+  padding: 16px 0 8px;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.teks {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.dosen {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.dosen strong {
+  font-weight: 600;
+  color: var(--ink);
+}
